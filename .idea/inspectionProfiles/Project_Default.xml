@@ -4,7 +4,7 @@
     <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredPackages">
         <value>
-          <list size="12">
+          <list size="14">
             <item index="0" class="java.lang.String" itemvalue="mysqlclient" />
             <item index="1" class="java.lang.String" itemvalue="pyspider" />
             <item index="2" class="java.lang.String" itemvalue="scrapy-redis" />
@@ -17,6 +17,8 @@
             <item index="9" class="java.lang.String" itemvalue="flask" />
             <item index="10" class="java.lang.String" itemvalue="pyquery" />
             <item index="11" class="java.lang.String" itemvalue="scrapyrt" />
+            <item index="12" class="java.lang.String" itemvalue="django" />
+            <item index="13" class="java.lang.String" itemvalue="djangorestframework" />
           </list>
         </value>
       </option>

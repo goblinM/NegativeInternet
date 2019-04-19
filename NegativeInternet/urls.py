@@ -15,11 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
 from app.web.views import index
+from app.web.web_views.user_view import UserViewSet
+from rest_framework_swagger.views import get_swagger_view
+schema_view = get_swagger_view(title='API 接口文档')
+from rest_framework import routers
+router = routers.DefaultRouter()
+router.register(r'user',UserViewSet,base_name='user')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('api/login/', obtain_jwt_token),
+    path("api/",include(router.urls)),
+    path('api-auth/',include('rest_framework.urls',namespace='rest_framework')),
+    path('api-docs/',schema_view),#自动生成的api文档
     path('',index,name='index'),#这个是首页
     path('spider/',include('spider.urls')),#spider的路径
     path('web/',include('web.urls')),#系统集成数据的路径

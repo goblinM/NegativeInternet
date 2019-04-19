@@ -28,8 +28,11 @@ SECRET_KEY = '3_xfylp^0c5o-fs$6zsu&^qge%+tf9wq!0%eo(v)6fmh+1#w&q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
+#告诉 Django，使用 users 应用下的 User 用户模型。
+#AUTH_USER_MODEL = '[your_app_name].[your_user_model_name]' # 例如我这边设置的值为 'expert.User'
+AUTH_USER_MODEL = "web.User"
 
 # Application definition
 
@@ -42,12 +45,17 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'app.analysisData',
     'app.spider',
-    'app.web'
+    'app.web',
+    'rest_framework',
+    'rest_framework_swagger',
+    'rest_framework.authtoken',#token认证
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',#跨域问题
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -55,12 +63,40 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# 跨域增加忽略
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_WHITELIST = (
+    '*'
+)
+CORS_ALLOW_METHODS = (
+    'DELETE',
+    'GET',
+    'OPTIONS',
+    'PATCH',
+    'POST',
+    'PUT',
+    'VIEW',
+)
+CORS_ALLOW_HEADERS = (
+    'XMLHttpRequest',
+    'X_FILENAME',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+)
+
 ROOT_URLCONF = 'NegativeInternet.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['webfront/dist'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -81,8 +117,11 @@ WSGI_APPLICATION = 'NegativeInternet.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': "django.db.backends.mysql",
+        'NAME': "negative_internet",
+        "USER":"root",
+        "PASSWORD":"123456",
+        "HOST":"127.0.0.1"
     }
 }
 
@@ -104,14 +143,23 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+# 权限配置
+REST_FRAMEWORK = {
+  # Use Django's standard `django.contrib.auth` permissions,
+    # or allow read-only access for unauthenticated users.
+    'DEFAULT_PERMISSION_CLASSES': [
+        # 'rest_framework.permissions.IsAuthenticated',#需要认证
+        'rest_framework.permissions.AllowAny',#不需要验证
+        # 'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    ]
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-hans'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
@@ -124,3 +172,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# 配置静态文件的搜索路劲 dist文件夹时build后才生成的
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'webfront/dist/static')
+]

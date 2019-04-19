@@ -1,3 +1,42 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 # Create your models here.
+# 拓展继承user
+class User(AbstractUser):
+    # choices,第一个元素是存在数据库里真实的，第二个是页面显示的
+    TYPE_CHOINCES = (
+        (0,"admin"),
+        (1,"user")
+    )
+    # user = models.CharField(max_length=25,null=True)
+    # password = models.CharField(max_length=255,null=True)
+    user_type = models.CharField(max_length=25,choices=TYPE_CHOINCES,default=1,verbose_name=u'用户的类型')#默认普通用户
+    user_phone = models.IntegerField(null=True,verbose_name=u"用户的手机号码")
+
+    class Meta(AbstractUser.Meta):
+        verbose_name = "用户表"
+        app_label = "web"
+
+# 功能模块表
+class Internet_Module(models.Model):
+    name = models.CharField(max_length=55,null=True,verbose_name=u"中文模块名")
+    unique_id = models.IntegerField()
+    english_name = models.CharField(max_length=55,null=True,verbose_name=u"英文模块名")
+    create_time = models.DateField(auto_now_add=True,verbose_name='创建时间')
+    update_time = models.DateField(auto_now=True,verbose_name=u"每次更新时间")
+
+    class Meta:
+        verbose_name = "功能模块表" #指定在admin管理界面中显示的名称
+        db_table = "internet_module" #自定义表名称
+        app_label = "web"
+
+#  用户功能配置表
+class User_Module(models.Model):
+    module = models.ForeignKey(Internet_Module,on_delete=models.CASCADE,verbose_name=u"关联功能模块表")
+    user = models.ForeignKey(User,on_delete=models.CASCADE,verbose_name=u"用户表外键")
+
+    class Meta:
+        verbose_name = "用户功能配置表"
+        db_table = "user_module"
+        app_label = "web"

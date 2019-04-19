@@ -37,6 +37,8 @@ def get_counts(request):
     print(conn.count())
     return HttpResponse(str(conn.count()))
 
+
+
 # if __name__ == '__main__':
 #     app.run()
 
