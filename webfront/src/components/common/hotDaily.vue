@@ -1,0 +1,280 @@
+<template>
+<el-container>
+  <el-main>
+    <div class="head-title">
+      实时热点
+    </div>
+    <div class="table-box">
+      <el-table :data="hotData">
+        <el-table-column
+          prop="rank"
+          label="排名"
+          align="center"
+          width="200"
+        >
+          <!--<template slot-scope="scope">-->
+            <!--<span>1</span>-->
+        <!--</template>-->
+        </el-table-column>
+        <el-table-column
+          prop="keyword"
+          label="关键词"
+          align="center"
+          width="400"
+        >
+          <!--<template slot-scope="scope">-->
+            <!--<span>鸡腿</span>-->
+        <!--</template>-->
+        </el-table-column>
+        <el-table-column
+          label="相关链接"
+          align="center"
+          width="400"
+        >
+          <template>
+            <span style="padding: 15px auto">新闻</span>
+            <span>视频</span>
+            <span style="padding: 15px auto">图片</span>
+        </template>
+        </el-table-column>
+        <el-table-column
+          prop="search_score"
+          label="搜索指数"
+          align="center"
+          width="200"
+        >
+           <!--<template slot-scope="scope">-->
+            <!--<span>2454653544</span>-->
+        <!--</template>-->
+        </el-table-column>
+      </el-table>
+    </div>
+  </el-main>
+</el-container>
+</template>
+
+<script>
+    export default {
+        name: "hotDaily",
+        data(){
+          return {
+            hotData:[
+              {
+                rank:"1",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"2",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"3",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"4",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"5",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"6",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"7",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"8",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"9",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"10",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"11",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"12",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },{
+                rank:"13",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"14",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"15",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"16",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"17",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"18",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"19",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+              {
+                rank:"20",
+                search_score:25464135,
+                keyword:"鸡腿杀人",
+                related_link:{
+                  news:"新闻",
+                  video:"视频",
+                  picture:"图片"
+                }
+              },
+
+            ]
+          }
+        }
+    }
+</script>
+
+<style scoped>
+.table-box{
+  width: 1200px;
+  margin: 20px auto;
+}
+.head-title{
+    float: left;
+    margin-left: 150px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+</style>

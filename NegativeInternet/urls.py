@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
+
 from app.web.views import index
 from app.web.web_views.user_view import UserViewSet
 from rest_framework_swagger.views import get_swagger_view
@@ -29,7 +31,8 @@ urlpatterns = [
     path("api/",include(router.urls)),
     path('api-auth/',include('rest_framework.urls',namespace='rest_framework')),
     path('api-docs/',schema_view),#自动生成的api文档
-    path('',index,name='index'),#这个是首页
+    #path('',index,name='index'),#这个是首页
+    path(r'', TemplateView.as_view(template_name="index.html")),
     path('spider/',include('spider.urls')),#spider的路径
     path('web/',include('web.urls')),#系统集成数据的路径
     path('analysis/',include('analysisData.urls'))#数据分析的路劲
