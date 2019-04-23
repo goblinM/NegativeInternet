@@ -1,8 +1,8 @@
 <template>
 <div class="function-wrapper">
         <ul class="nav nav-tabs" role="tablist" id="pandect">
-            <li role="presentation" :class="{active:shows==1}">
-                <router-link target="_self" :to="{name:'hotDaily'}" @click="bindActive(1)"> <!--:to="{name:'hotDaily'}" -->
+            <li role="presentation" class="active">
+                <router-link target="_self" :to="{name:'hotDaily'}" > <!--:to="{name:'hotDaily'}" -->
                     <!--<span class="icon-info-monitor-wrapper">-->
                     <!--<span class="icon-info-monitor"></span>-->
                     <img src="../../assets/1.png"/>
@@ -11,32 +11,32 @@
                     <!--</span>-->
                 </router-link>
             </li>
-            <li role="presentation" :class="{active:shows==2}">
-                <router-link target="_self" :to="{name:'newsWatch'}" @click="bindActive(2)"> <!--:to="{name:'newsWatch'}" -->
+            <li role="presentation" ><!--:class="{active:shows==2}"-->
+                <router-link target="_self" :to="{name:'newsWatch'}" > <!--:to="{name:'newsWatch'}" -->
                     <!--<span class="icon-info-warning"></span>-->
                   <img src="../../assets/2.png"/>
                     <span class="">资讯浏览</span>
                     <span class="ani_border"></span>
                 </router-link>
             </li>
-            <li role="presentation" :class="{active:shows==3}">
-                 <router-link  target="_self" :to="{name:'dataAnalysis'}" @click="bindActive(3)">
+            <li role="presentation" ><!--:class="{active:shows==3}"-->
+                 <router-link  target="_self" :to="{name:'dataAnalysis'}" >
                     <!--<span class="icon-info-analysis"></span>-->
                   <img src="../../assets/5.png"/>
                     <span class="">大数据分析</span>
                     <span class="ani_border"></span>
                  </router-link>
             </li>
-            <li role="presentation" :class="{active:shows==4}">
-                <router-link :to="{name:'#'}"  @click="bindActive(4)">
+            <li role="presentation" ><!--:class="{active:shows==4}"-->
+                <router-link :to="{name:'#'}">
                     <!--<span class="icon-info-report"></span>-->
                   <img src="../../assets/3.png"/>
                     <span class="">用户管理</span>
                     <span class="ani_border"></span>
                 </router-link>
             </li>
-            <li role="presentation" :class="{active:shows==5}">
-                <router-link :to="{name:'#'}"  @click="bindActive(5)">
+            <li role="presentation" ><!--:class="{active:shows==5}"-->
+                <router-link :to="{name:'#'}" >
                     <!--<span class="icon-info-screen"></span>-->
                   <img src="../../assets/4.png"/>
                     <span class="">爬虫管理</span>
@@ -90,17 +90,17 @@
       mounted(){},
       methods:{
           //点击tab栏动态添加active,这里似乎还需要考虑一下
-          bindActive(cur){
-            console.log(cur);
-            this.shows = parseInt(cur);
-            if(this.shows===1){
-              this.$router.push({name:"/HomePage/hotDaily"});//跳转到index页面
-            }
-            else if(this.shows === 2){
-              this.$router.push({name:"/HomePage/newsWatch"})
-            }
-
-          },
+          // bindActive(cur){
+          //   console.log(cur);
+          //   this.shows = parseInt(cur);
+          //   if(this.shows===1){
+          //     this.$router.push({name:"/HomePage/hotDaily"});//跳转到index页面
+          //   }
+          //   else if(this.shows === 2){
+          //     this.$router.push({name:"/HomePage/newsWatch"})
+          //   }
+          //
+          // },
       },
     }
 </script>

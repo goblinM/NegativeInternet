@@ -165,7 +165,7 @@ USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False # 为了保证django存入MySQL数据库时间差8个小时的问题
 
 
 # Static files (CSS, JavaScript, Images)

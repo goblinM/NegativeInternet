@@ -1,0 +1,451 @@
+2019-04-23 11:23:05 [scrapy.utils.log] INFO: Scrapy 1.6.0 started (bot: InternetSpider)
+2019-04-23 11:23:05 [scrapy.utils.log] INFO: Versions: lxml 4.3.3.0, libxml2 2.9.5, cssselect 1.0.3, parsel 1.5.1, w3lib 1.20.0, Twisted 18.9.0, Python 3.6.8 |Anaconda, Inc.| (default, Feb 21 2019, 18:30:04) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 19.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.3, Platform Windows-10-10.0.10586-SP0
+2019-04-23 11:23:05 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'InternetSpider', 'COOKIES_ENABLED': False, 'LOG_FILE': 'logs\\default\\hotdaily\\171d786c657711e9a1d754ab3a1c01b5.log', 'NEWSPIDER_MODULE': 'InternetSpider.spiders', 'SPIDER_MODULES': ['InternetSpider.spiders']}
+2019-04-23 11:23:05 [scrapy.extensions.telnet] INFO: Telnet Password: 96a599dd6e9a1a2f
+2019-04-23 11:23:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2019-04-23 11:23:05 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2019-04-23 11:23:05 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2019-04-23 11:23:05 [scrapy.middleware] INFO: Enabled item pipelines:
+['InternetSpider.pipelines.HotPipeline']
+2019-04-23 11:23:05 [scrapy.core.engine] INFO: Spider opened
+2019-04-23 11:23:05 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2019-04-23 11:23:05 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2019-04-23 11:23:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513> (referer: None)
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=4%D4%C223%C8%D5%BA%A3%C9%CF%D4%C4%B1%F8&ie=gbk',
+ 'keyword': '4月23日海上阅兵',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=4%D4%C223%C8%D5%BA%A3%C9%CF%D4%C4%B1%F8',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=4%D4%C223%C8%D5%BA%A3%C9%CF%D4%C4%B1%F8',
+ 'rank': '1',
+ 'search_score': '13224556',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=4%D4%C223%C8%D5%BA%A3%C9%CF%D4%C4%B1%F8'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C8%FD%D0%C7%CD%C6%B3%D9%CA%D6%BB%FA%C9%CF%CA%D0&ie=gbk',
+ 'keyword': '三星推迟手机上市',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C8%FD%D0%C7%CD%C6%B3%D9%CA%D6%BB%FA%C9%CF%CA%D0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C8%FD%D0%C7%CD%C6%B3%D9%CA%D6%BB%FA%C9%CF%CA%D0',
+ 'rank': '2',
+ 'search_score': '8645875',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C8%FD%D0%C7%CD%C6%B3%D9%CA%D6%BB%FA%C9%CF%CA%D0'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B7%B6%B1%F9%B1%F9%B9%AB%BF%AA%C1%C1%CF%E0&ie=gbk',
+ 'keyword': '范冰冰公开亮相',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B7%B6%B1%F9%B1%F9%B9%AB%BF%AA%C1%C1%CF%E0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B7%B6%B1%F9%B1%F9%B9%AB%BF%AA%C1%C1%CF%E0',
+ 'rank': '3',
+ 'search_score': '6655894',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B7%B6%B1%F9%B1%F9%B9%AB%BF%AA%C1%C1%CF%E0'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C0%B6%BD%E0%E7%F8%C4%B9%B1%AE%B1%BB%D1%AC%BA%DA&ie=gbk',
+ 'keyword': '蓝洁瑛墓碑被熏黑',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C0%B6%BD%E0%E7%F8%C4%B9%B1%AE%B1%BB%D1%AC%BA%DA',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C0%B6%BD%E0%E7%F8%C4%B9%B1%AE%B1%BB%D1%AC%BA%DA',
+ 'rank': '4',
+ 'search_score': '6461462',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C0%B6%BD%E0%E7%F8%C4%B9%B1%AE%B1%BB%D1%AC%BA%DA'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CB%B9%C0%EF%C0%BC%BF%A8%BD%F4%BC%B1%D7%B4%CC%AC&ie=gbk',
+ 'keyword': '斯里兰卡紧急状态',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CB%B9%C0%EF%C0%BC%BF%A8%BD%F4%BC%B1%D7%B4%CC%AC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CB%B9%C0%EF%C0%BC%BF%A8%BD%F4%BC%B1%D7%B4%CC%AC',
+ 'rank': '5',
+ 'search_score': '6381903',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CB%B9%C0%EF%C0%BC%BF%A8%BD%F4%BC%B1%D7%B4%CC%AC'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B8%D6%C7%D9%BC%D2%CE%D7%E4%F4%C0%F6%C8%A5%CA%C0&ie=gbk',
+ 'keyword': '钢琴家巫漪丽去世',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B8%D6%C7%D9%BC%D2%CE%D7%E4%F4%C0%F6%C8%A5%CA%C0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B8%D6%C7%D9%BC%D2%CE%D7%E4%F4%C0%F6%C8%A5%CA%C0',
+ 'rank': '6',
+ 'search_score': '6116895',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B8%D6%C7%D9%BC%D2%CE%D7%E4%F4%C0%F6%C8%A5%CA%C0'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CA%D3%BE%F5%D6%D0%B9%FA%BB%D6%B8%B4%C9%CF%CF%DF&ie=gbk',
+ 'keyword': '视觉中国恢复上线',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CA%D3%BE%F5%D6%D0%B9%FA%BB%D6%B8%B4%C9%CF%CF%DF',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CA%D3%BE%F5%D6%D0%B9%FA%BB%D6%B8%B4%C9%CF%CF%DF',
+ 'rank': '7',
+ 'search_score': '4696379',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CA%D3%BE%F5%D6%D0%B9%FA%BB%D6%B8%B4%C9%CF%CF%DF'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B9%FA%C8%CB%CB%B9%C0%EF%C0%BC%BF%A8%D3%F6%C4%D1&ie=gbk',
+ 'keyword': '国人斯里兰卡遇难',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B9%FA%C8%CB%CB%B9%C0%EF%C0%BC%BF%A8%D3%F6%C4%D1',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B9%FA%C8%CB%CB%B9%C0%EF%C0%BC%BF%A8%D3%F6%C4%D1',
+ 'rank': '8',
+ 'search_score': '4665922',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B9%FA%C8%CB%CB%B9%C0%EF%C0%BC%BF%A8%D3%F6%C4%D1'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C2%ED%B9%FA%C3%F7%B7%E7%B2%A8%BA%F3%B7%A2%CE%C4&ie=gbk',
+ 'keyword': '马国明风波后发文',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C2%ED%B9%FA%C3%F7%B7%E7%B2%A8%BA%F3%B7%A2%CE%C4',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C2%ED%B9%FA%C3%F7%B7%E7%B2%A8%BA%F3%B7%A2%CE%C4',
+ 'rank': '9',
+ 'search_score': '4476713',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C2%ED%B9%FA%C3%F7%B7%E7%B2%A8%BA%F3%B7%A2%CE%C4'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%BB%C6%D0%C4%D3%B1%B4%F8%C4%D0%B0%E9%BB%D8%BC%D2&ie=gbk',
+ 'keyword': '黄心颖带男伴回家',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BB%C6%D0%C4%D3%B1%B4%F8%C4%D0%B0%E9%BB%D8%BC%D2',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BB%C6%D0%C4%D3%B1%B4%F8%C4%D0%B0%E9%BB%D8%BC%D2',
+ 'rank': '10',
+ 'search_score': '4469072',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BB%C6%D0%C4%D3%B1%B4%F8%C4%D0%B0%E9%BB%D8%BC%D2'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%D6%DC%BD%DC%C2%D7%BA%C8%C4%CC%B2%E8%D4%AD%D2%F2&ie=gbk',
+ 'keyword': '周杰伦喝奶茶原因',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D6%DC%BD%DC%C2%D7%BA%C8%C4%CC%B2%E8%D4%AD%D2%F2',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%DC%BD%DC%C2%D7%BA%C8%C4%CC%B2%E8%D4%AD%D2%F2',
+ 'rank': '11',
+ 'search_score': '4459636',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%DC%BD%DC%C2%D7%BA%C8%C4%CC%B2%E8%D4%AD%D2%F2'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C1%F5%C7%BF%B6%AB%B0%B8%CA%D3%C6%B5&ie=gbk',
+ 'keyword': '刘强东案视频',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C1%F5%C7%BF%B6%AB%B0%B8%CA%D3%C6%B5',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C1%F5%C7%BF%B6%AB%B0%B8%CA%D3%C6%B5',
+ 'rank': '12',
+ 'search_score': '4250756',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C1%F5%C7%BF%B6%AB%B0%B8%CA%D3%C6%B5'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CD%E2%C2%F4%B8%E7%D7%B2%C8%CB%D4%E2%CB%F7%C5%E2&ie=gbk',
+ 'keyword': '外卖哥撞人遭索赔',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CD%E2%C2%F4%B8%E7%D7%B2%C8%CB%D4%E2%CB%F7%C5%E2',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CD%E2%C2%F4%B8%E7%D7%B2%C8%CB%D4%E2%CB%F7%C5%E2',
+ 'rank': '13',
+ 'search_score': '4231744',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CD%E2%C2%F4%B8%E7%D7%B2%C8%CB%D4%E2%CB%F7%C5%E2'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C9%EE%DB%DA%B1%A9%D3%EA%D0%A1%BA%A2%CB%C0%CD%F6&ie=gbk',
+ 'keyword': '深圳暴雨小孩死亡',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C9%EE%DB%DA%B1%A9%D3%EA%D0%A1%BA%A2%CB%C0%CD%F6',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C9%EE%DB%DA%B1%A9%D3%EA%D0%A1%BA%A2%CB%C0%CD%F6',
+ 'rank': '14',
+ 'search_score': '4000825',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C9%EE%DB%DA%B1%A9%D3%EA%D0%A1%BA%A2%CB%C0%CD%F6'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%BA%AB%D1%A9%B5%C0%C7%B8&ie=gbk',
+ 'keyword': '韩雪道歉',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BA%AB%D1%A9%B5%C0%C7%B8',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BA%AB%D1%A9%B5%C0%C7%B8',
+ 'rank': '15',
+ 'search_score': '3948741',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BA%AB%D1%A9%B5%C0%C7%B8'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B5%DA%C8%FD%B7%BD%B2%BB%CA%DB%B4%A6%B7%BD%D2%A9&ie=gbk',
+ 'keyword': '第三方不售处方药',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B5%DA%C8%FD%B7%BD%B2%BB%CA%DB%B4%A6%B7%BD%D2%A9',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B5%DA%C8%FD%B7%BD%B2%BB%CA%DB%B4%A6%B7%BD%D2%A9',
+ 'rank': '16',
+ 'search_score': '3939050',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B5%DA%C8%FD%B7%BD%B2%BB%CA%DB%B4%A6%B7%BD%D2%A9'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CC%D8%CB%B9%C0%AD%D7%D4%C8%BC%20%BE%DC%C5%E2&ie=gbk',
+ 'keyword': '特斯拉自燃 拒赔',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CC%D8%CB%B9%C0%AD%D7%D4%C8%BC%20%BE%DC%C5%E2',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CC%D8%CB%B9%C0%AD%D7%D4%C8%BC%20%BE%DC%C5%E2',
+ 'rank': '17',
+ 'search_score': '3938790',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CC%D8%CB%B9%C0%AD%D7%D4%C8%BC%20%BE%DC%C5%E2'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B6%B7%D3%E3%C9%CF%CA%D0&ie=gbk',
+ 'keyword': '斗鱼上市',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B6%B7%D3%E3%C9%CF%CA%D0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B6%B7%D3%E3%C9%CF%CA%D0',
+ 'rank': '18',
+ 'search_score': '3457054',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B6%B7%D3%E3%C9%CF%CA%D0'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B1%BC%B3%DB%B3%B5%D6%F7%CD%CF%C7%B7%C7%AE%BF%EE&ie=gbk',
+ 'keyword': '奔驰车主拖欠钱款',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B1%BC%B3%DB%B3%B5%D6%F7%CD%CF%C7%B7%C7%AE%BF%EE',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B1%BC%B3%DB%B3%B5%D6%F7%CD%CF%C7%B7%C7%AE%BF%EE',
+ 'rank': '19',
+ 'search_score': '3282442',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B1%BC%B3%DB%B3%B5%D6%F7%CD%CF%C7%B7%C7%AE%BF%EE'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%BF%EC%B5%DD%D4%B1%CB%BD%BF%AA%B0%FC%B9%FC&ie=gbk',
+ 'keyword': '快递员私开包裹',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BF%EC%B5%DD%D4%B1%CB%BD%BF%AA%B0%FC%B9%FC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BF%EC%B5%DD%D4%B1%CB%BD%BF%AA%B0%FC%B9%FC',
+ 'rank': '20',
+ 'search_score': '3258677',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BF%EC%B5%DD%D4%B1%CB%BD%BF%AA%B0%FC%B9%FC'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C2%C9%CA%A6%D6%A4%CA%B5%B9%AB%D4%A2%CA%D3%C6%B5&ie=gbk',
+ 'keyword': '律师证实公寓视频',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C2%C9%CA%A6%D6%A4%CA%B5%B9%AB%D4%A2%CA%D3%C6%B5',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C2%C9%CA%A6%D6%A4%CA%B5%B9%AB%D4%A2%CA%D3%C6%B5',
+ 'rank': '21',
+ 'search_score': '3187496',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C2%C9%CA%A6%D6%A4%CA%B5%B9%AB%D4%A2%CA%D3%C6%B5'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%BA%F4%BA%CD%BA%C6%CC%D8%C8%CB%B2%C5%D0%C2%D5%FE&ie=gbk',
+ 'keyword': '呼和浩特人才新政',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%BA%F4%BA%CD%BA%C6%CC%D8%C8%CB%B2%C5%D0%C2%D5%FE',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%BA%F4%BA%CD%BA%C6%CC%D8%C8%CB%B2%C5%D0%C2%D5%FE',
+ 'rank': '22',
+ 'search_score': '3186722',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%BA%F4%BA%CD%BA%C6%CC%D8%C8%CB%B2%C5%D0%C2%D5%FE'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CE%E2%D3%EA%F6%AD%D0%FB%B2%BC%BB%B3%B6%FE%CC%A5&ie=gbk',
+ 'keyword': '吴雨霏宣布怀二胎',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CE%E2%D3%EA%F6%AD%D0%FB%B2%BC%BB%B3%B6%FE%CC%A5',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CE%E2%D3%EA%F6%AD%D0%FB%B2%BC%BB%B3%B6%FE%CC%A5',
+ 'rank': '23',
+ 'search_score': '3168771',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CE%E2%D3%EA%F6%AD%D0%FB%B2%BC%BB%B3%B6%FE%CC%A5'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%D5%C5%DC%B0%D3%E8%C9%FD%BC%B6%B5%B1%C2%E8&ie=gbk',
+ 'keyword': '张馨予升级当妈',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D5%C5%DC%B0%D3%E8%C9%FD%BC%B6%B5%B1%C2%E8',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D5%C5%DC%B0%D3%E8%C9%FD%BC%B6%B5%B1%C2%E8',
+ 'rank': '24',
+ 'search_score': '3140525',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D5%C5%DC%B0%D3%E8%C9%FD%BC%B6%B5%B1%C2%E8'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B9%FE%C0%EF%CD%F5%D7%D3%BB%F2%C5%C9%B7%C7%D6%DE&ie=gbk',
+ 'keyword': '哈里王子或派非洲',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B9%FE%C0%EF%CD%F5%D7%D3%BB%F2%C5%C9%B7%C7%D6%DE',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B9%FE%C0%EF%CD%F5%D7%D3%BB%F2%C5%C9%B7%C7%D6%DE',
+ 'rank': '25',
+ 'search_score': '2955400',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B9%FE%C0%EF%CD%F5%D7%D3%BB%F2%C5%C9%B7%C7%D6%DE'}
+2019-04-23 11:23:06 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B8%B4%C1%AA4%C6%B1%B7%BF%C6%C65%D2%DA&ie=gbk',
+ 'keyword': '复联4票房破5亿',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B8%B4%C1%AA4%C6%B1%B7%BF%C6%C65%D2%DA',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B8%B4%C1%AA4%C6%B1%B7%BF%C6%C65%D2%DA',
+ 'rank': '26',
+ 'search_score': '2865957',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B8%B4%C1%AA4%C6%B1%B7%BF%C6%C65%D2%DA'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CB%B3%B7%E1%BB%D8%D3%A6%CB%BD%B2%F0%B0%FC%B9%FC&ie=gbk',
+ 'keyword': '顺丰回应私拆包裹',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CB%B3%B7%E1%BB%D8%D3%A6%CB%BD%B2%F0%B0%FC%B9%FC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CB%B3%B7%E1%BB%D8%D3%A6%CB%BD%B2%F0%B0%FC%B9%FC',
+ 'rank': '27',
+ 'search_score': '2768169',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CB%B3%B7%E1%BB%D8%D3%A6%CB%BD%B2%F0%B0%FC%B9%FC'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C1%FA%B3%D8%C9%BD%BB%F0%D2%D1%C6%CB%C3%F0&ie=gbk',
+ 'keyword': '龙池山火已扑灭',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C1%FA%B3%D8%C9%BD%BB%F0%D2%D1%C6%CB%C3%F0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C1%FA%B3%D8%C9%BD%BB%F0%D2%D1%C6%CB%C3%F0',
+ 'rank': '28',
+ 'search_score': '2676391',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C1%FA%B3%D8%C9%BD%BB%F0%D2%D1%C6%CB%C3%F0'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CA%A4%C0%FB%D4%F8%D4%DA%BE%C6%B0%C9%CE%FC%B6%BE&ie=gbk',
+ 'keyword': '胜利曾在酒吧吸毒',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CA%A4%C0%FB%D4%F8%D4%DA%BE%C6%B0%C9%CE%FC%B6%BE',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CA%A4%C0%FB%D4%F8%D4%DA%BE%C6%B0%C9%CE%FC%B6%BE',
+ 'rank': '29',
+ 'search_score': '2644918',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CA%A4%C0%FB%D4%F8%D4%DA%BE%C6%B0%C9%CE%FC%B6%BE'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%CF%CA%D0&ie=gbk',
+ 'keyword': '瑞幸咖啡上市',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C8%F0%D0%D2%BF%A7%B7%C8%C9%CF%CA%D0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%CF%CA%D0',
+ 'rank': '30',
+ 'search_score': '2543381',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%CF%CA%D0'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%D6%A3%D4%A8%BD%E0%D6%CA%D2%C9%B2%DC%CE%C4%D0%F9&ie=gbk',
+ 'keyword': '郑渊洁质疑曹文轩',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D6%A3%D4%A8%BD%E0%D6%CA%D2%C9%B2%DC%CE%C4%D0%F9',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D6%A3%D4%A8%BD%E0%D6%CA%D2%C9%B2%DC%CE%C4%D0%F9',
+ 'rank': '31',
+ 'search_score': '2534364',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D6%A3%D4%A8%BD%E0%D6%CA%D2%C9%B2%DC%CE%C4%D0%F9'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CD%F5%C5%C6%BC%D2%D7%E5%C1%C4%CC%EC%BC%C7%C2%BC&ie=gbk',
+ 'keyword': '王牌家族聊天记录',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CD%F5%C5%C6%BC%D2%D7%E5%C1%C4%CC%EC%BC%C7%C2%BC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CD%F5%C5%C6%BC%D2%D7%E5%C1%C4%CC%EC%BC%C7%C2%BC',
+ 'rank': '32',
+ 'search_score': '2530545',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CD%F5%C5%C6%BC%D2%D7%E5%C1%C4%CC%EC%BC%C7%C2%BC'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B6%C5%C0%D9%CB%B9%CE%C4%B0%B8%B7%AD%B3%B5&ie=gbk',
+ 'keyword': '杜蕾斯文案翻车',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B6%C5%C0%D9%CB%B9%CE%C4%B0%B8%B7%AD%B3%B5',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B6%C5%C0%D9%CB%B9%CE%C4%B0%B8%B7%AD%B3%B5',
+ 'rank': '33',
+ 'search_score': '2500842',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B6%C5%C0%D9%CB%B9%CE%C4%B0%B8%B7%AD%B3%B5'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B5%CE%B5%CE%CD%F8%D4%BC%B3%B5%B3%E9%B3%C9&ie=gbk',
+ 'keyword': '滴滴网约车抽成',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B5%CE%B5%CE%CD%F8%D4%BC%B3%B5%B3%E9%B3%C9',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B5%CE%B5%CE%CD%F8%D4%BC%B3%B5%B3%E9%B3%C9',
+ 'rank': '34',
+ 'search_score': '2449350',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B5%CE%B5%CE%CD%F8%D4%BC%B3%B5%B3%E9%B3%C9'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CB%B9%C0%EF%C0%BC%BF%A8%B0%CB%C1%AC%D5%A8&ie=gbk',
+ 'keyword': '斯里兰卡八连炸',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CB%B9%C0%EF%C0%BC%BF%A8%B0%CB%C1%AC%D5%A8',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CB%B9%C0%EF%C0%BC%BF%A8%B0%CB%C1%AC%D5%A8',
+ 'rank': '35',
+ 'search_score': '2433348',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CB%B9%C0%EF%C0%BC%BF%A8%B0%CB%C1%AC%D5%A8'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B7%C6%C2%C9%B1%F66.0%BC%B6%B5%D8%D5%F0&ie=gbk',
+ 'keyword': '菲律宾6.0级地震',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B7%C6%C2%C9%B1%F66.0%BC%B6%B5%D8%D5%F0',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B7%C6%C2%C9%B1%F66.0%BC%B6%B5%D8%D5%F0',
+ 'rank': '36',
+ 'search_score': '2425591',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B7%C6%C2%C9%B1%F66.0%BC%B6%B5%D8%D5%F0'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B2%A8%C2%DE%C9%EA%BF%C6%B3%D0%C8%CF%B0%DC%D1%A1&ie=gbk',
+ 'keyword': '波罗申科承认败选',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B2%A8%C2%DE%C9%EA%BF%C6%B3%D0%C8%CF%B0%DC%D1%A1',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B2%A8%C2%DE%C9%EA%BF%C6%B3%D0%C8%CF%B0%DC%D1%A1',
+ 'rank': '37',
+ 'search_score': '2347041',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B2%A8%C2%DE%C9%EA%BF%C6%B3%D0%C8%CF%B0%DC%D1%A1'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B4%F3%C1%AC%20%B1%AC%D5%A8%20%B1%D9%D2%A5&ie=gbk',
+ 'keyword': '大连 爆炸 辟谣',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B4%F3%C1%AC%20%B1%AC%D5%A8%20%B1%D9%D2%A5',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B4%F3%C1%AC%20%B1%AC%D5%A8%20%B1%D9%D2%A5',
+ 'rank': '38',
+ 'search_score': '2332887',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B4%F3%C1%AC%20%B1%AC%D5%A8%20%B1%D9%D2%A5'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B1%B1%BE%A9%B6%FE%BA%C5%CF%DF%B9%CA%D5%CF&ie=gbk',
+ 'keyword': '北京二号线故障',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B1%B1%BE%A9%B6%FE%BA%C5%CF%DF%B9%CA%D5%CF',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B1%B1%BE%A9%B6%FE%BA%C5%CF%DF%B9%CA%D5%CF',
+ 'rank': '39',
+ 'search_score': '2236233',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B1%B1%BE%A9%B6%FE%BA%C5%CF%DF%B9%CA%D5%CF'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CB%B9%C0%EF%C0%BC%BF%A8%CD%BB%B7%A2%BF%D6%CF%AE&ie=gbk',
+ 'keyword': '斯里兰卡突发恐袭',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CB%B9%C0%EF%C0%BC%BF%A8%CD%BB%B7%A2%BF%D6%CF%AE',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CB%B9%C0%EF%C0%BC%BF%A8%CD%BB%B7%A2%BF%D6%CF%AE',
+ 'rank': '40',
+ 'search_score': '2217067',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CB%B9%C0%EF%C0%BC%BF%A8%CD%BB%B7%A2%BF%D6%CF%AE'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=360%CD%CB%B3%F6%B1%B1%BE%A9%CA%B1%BC%E4&ie=gbk',
+ 'keyword': '360退出北京时间',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=360%CD%CB%B3%F6%B1%B1%BE%A9%CA%B1%BC%E4',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=360%CD%CB%B3%F6%B1%B1%BE%A9%CA%B1%BC%E4',
+ 'rank': '41',
+ 'search_score': '2215956',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=360%CD%CB%B3%F6%B1%B1%BE%A9%CA%B1%BC%E4'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C4%FE%B2%A8%C8%CB%B2%C5%B9%BA%B7%BF%B2%B9%CC%F9&ie=gbk',
+ 'keyword': '宁波人才购房补贴',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C4%FE%B2%A8%C8%CB%B2%C5%B9%BA%B7%BF%B2%B9%CC%F9',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C4%FE%B2%A8%C8%CB%B2%C5%B9%BA%B7%BF%B2%B9%CC%F9',
+ 'rank': '42',
+ 'search_score': '2192405',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C4%FE%B2%A8%C8%CB%B2%C5%B9%BA%B7%BF%B2%B9%CC%F9'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=84%CB%EA%C7%F2%C3%D4%BC%FB%B9%F9%B0%AC%C2%D7&ie=gbk',
+ 'keyword': '84岁球迷见郭艾伦',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=84%CB%EA%C7%F2%C3%D4%BC%FB%B9%F9%B0%AC%C2%D7',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=84%CB%EA%C7%F2%C3%D4%BC%FB%B9%F9%B0%AC%C2%D7',
+ 'rank': '43',
+ 'search_score': '2188369',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=84%CB%EA%C7%F2%C3%D4%BC%FB%B9%F9%B0%AC%C2%D7'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%D7%EE%D3%D2%BB%D6%B8%B4%B2%BF%B7%D6%B9%A6%C4%DC&ie=gbk',
+ 'keyword': '最右恢复部分功能',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D7%EE%D3%D2%BB%D6%B8%B4%B2%BF%B7%D6%B9%A6%C4%DC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D7%EE%D3%D2%BB%D6%B8%B4%B2%BF%B7%D6%B9%A6%C4%DC',
+ 'rank': '44',
+ 'search_score': '2148370',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D7%EE%D3%D2%BB%D6%B8%B4%B2%BF%B7%D6%B9%A6%C4%DC'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CE%E5%D0%C7%BC%B6%B7%B9%B5%EA%B1%BB%D5%AA%D0%C7&ie=gbk',
+ 'keyword': '五星级饭店被摘星',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CE%E5%D0%C7%BC%B6%B7%B9%B5%EA%B1%BB%D5%AA%D0%C7',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CE%E5%D0%C7%BC%B6%B7%B9%B5%EA%B1%BB%D5%AA%D0%C7',
+ 'rank': '45',
+ 'search_score': '1997722',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CE%E5%D0%C7%BC%B6%B7%B9%B5%EA%B1%BB%D5%AA%D0%C7'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%CA%C0%C6%B9%C8%FC%C2%E4%BB%A7%B3%C9%B6%BC&ie=gbk',
+ 'keyword': '世乒赛落户成都',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%CA%C0%C6%B9%C8%FC%C2%E4%BB%A7%B3%C9%B6%BC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%CA%C0%C6%B9%C8%FC%C2%E4%BB%A7%B3%C9%B6%BC',
+ 'rank': '46',
+ 'search_score': '1949630',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%CA%C0%C6%B9%C8%FC%C2%E4%BB%A7%B3%C9%B6%BC'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%D5%C5%B5%A4%B7%E5%20%BB%D8%D3%A6%B3%F6%B9%EC&ie=gbk',
+ 'keyword': '张丹峰 回应出轨',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%D5%C5%B5%A4%B7%E5%20%BB%D8%D3%A6%B3%F6%B9%EC',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%D5%C5%B5%A4%B7%E5%20%BB%D8%D3%A6%B3%F6%B9%EC',
+ 'rank': '47',
+ 'search_score': '1804905',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%D5%C5%B5%A4%B7%E5%20%BB%D8%D3%A6%B3%F6%B9%EC'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%EA%C7%EBIPO&ie=gbk',
+ 'keyword': '瑞幸咖啡申请IPO',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C8%F0%D0%D2%BF%A7%B7%C8%C9%EA%C7%EBIPO',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%EA%C7%EBIPO',
+ 'rank': '48',
+ 'search_score': '1734361',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C8%F0%D0%D2%BF%A7%B7%C8%C9%EA%C7%EBIPO'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%B0%AE%B6%FB%C0%BC%C5%AE%BC%C7%D5%DF%C9%ED%CD%F6&ie=gbk',
+ 'keyword': '爱尔兰女记者身亡',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%B0%AE%B6%FB%C0%BC%C5%AE%BC%C7%D5%DF%C9%ED%CD%F6',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%B0%AE%B6%FB%C0%BC%C5%AE%BC%C7%D5%DF%C9%ED%CD%F6',
+ 'rank': '49',
+ 'search_score': '1452633',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%B0%AE%B6%FB%C0%BC%C5%AE%BC%C7%D5%DF%C9%ED%CD%F6'}
+2019-04-23 11:23:07 [scrapy.core.scraper] DEBUG: Scraped from <200 http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513>
+{'image_link': 'http://image.baidu.com/i?tn=baiduimage&lm=-1&ct=201326592&cl=2&word=%C0%EE%B9%FA%C7%EC%CC%B890%BA%F3&ie=gbk',
+ 'keyword': '李国庆谈90后',
+ 'keyword_link': 'http://www.baidu.com/baidu?cl=3&tn=SE_baiduhomet8_jmjb7mjw&rsv_dl=fyb_top&fr=top1000&wd=%C0%EE%B9%FA%C7%EC%CC%B890%BA%F3',
+ 'news_link': 'http://news.baidu.com/ns?tn=news&from=news&cl=2&rn=20&ct=1&word=%C0%EE%B9%FA%C7%EC%CC%B890%BA%F3',
+ 'rank': '50',
+ 'search_score': '1416572',
+ 'video_link': 'http://v.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&word=%C0%EE%B9%FA%C7%EC%CC%B890%BA%F3'}
+2019-04-23 11:23:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2019-04-23 11:23:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 328,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 81468,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2019, 4, 23, 3, 23, 7, 874414),
+ 'item_scraped_count': 50,
+ 'log_count/DEBUG': 51,
+ 'log_count/INFO': 9,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2019, 4, 23, 3, 23, 5, 617471)}
+2019-04-23 11:23:07 [scrapy.core.engine] INFO: Spider closed (finished)

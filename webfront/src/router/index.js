@@ -25,8 +25,9 @@ export default new Router({
     },
     {
       path:"/HomePage",
-      name:"HomePage",
+      //name:"HomePage",
       component:HomePage,
+      redirect:'/HomePage/hotDaily',
       children:[
         {
           path:'',

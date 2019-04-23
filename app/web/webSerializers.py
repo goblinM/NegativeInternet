@@ -5,7 +5,7 @@ created by goblinM(莫敏欣) by 2019-04-18
 import serializers as serializers
 from rest_framework import serializers
 
-from app.web.models import User
+from app.web.models import User, Hot_Daily
 
 
 class UserSerializer(serializers.ModelSerializer):
@@ -14,3 +14,8 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         fields = '__all__'
         model = User
+
+class HotSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = "__all__"
+        model = Hot_Daily

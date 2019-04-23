@@ -59,19 +59,26 @@ Vue.prototype.$requestInterceptor = axios.interceptors.request.use(
 
       // console.log(sessionStorage.hasOwnProperty("token") && sessionStorage.hasOwnProperty("now_user_id"))
       if(router.currentRoute.name !='login'){
-        if(sessionStorage.hasOwnProperty("token") && sessionStorage.hasOwnProperty("now_user_id")) {
-          //console.log(sessionStorage.getItem("token"));
-          config.headers= {
+        config.headers= {
             'Content-Type':'application/x-www-form-urlencoded',
             'Authorization':sessionStorage.getItem("token"),
             // csrfmiddlewaretoken:this.getCookie("csrftoken")
           };
-        }else {
-
-          console.log('sessionStorage没登录token');
-          router.push({name:'login',query:{redirect: decodeURIComponent(router.currentRoute.fullPath)}})
-
-        }
+        /****************************这里是判断token是否存在不存在则返回登录界面start********************************/
+        // if(sessionStorage.hasOwnProperty("token") && sessionStorage.hasOwnProperty("now_user_id")) {
+        //   //console.log(sessionStorage.getItem("token"));
+        //   config.headers= {
+        //     'Content-Type':'application/x-www-form-urlencoded',
+        //     'Authorization':sessionStorage.getItem("token"),
+        //     // csrfmiddlewaretoken:this.getCookie("csrftoken")
+        //   };
+        // }else {
+        //
+        //   console.log('sessionStorage没登录token');
+        //   router.push({name:'login',query:{redirect: decodeURIComponent(router.currentRoute.fullPath)}})
+        //
+        // }
+        /****************************这里是判断token是否存在不存在则返回登录界面end********************************/
       }
                 return config;
     },
