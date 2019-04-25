@@ -19,6 +19,7 @@ from django.views.generic import TemplateView
 
 from app.web.views import index
 from app.web.web_views.hot_view import HotViewSet
+from app.web.web_views.news_view import ZiXunViewSet
 from app.web.web_views.user_view import UserViewSet
 from rest_framework_swagger.views import get_swagger_view
 from rest_framework import routers
@@ -26,6 +27,7 @@ schema_view = get_swagger_view(title='API 接口文档')
 router = routers.DefaultRouter()
 router.register(r'user',UserViewSet,base_name='user')
 router.register(r"hot",HotViewSet,base_name='hot')
+router.register(r"news",ZiXunViewSet,base_name='news')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

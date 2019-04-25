@@ -1,3 +1,5 @@
+import sys
+
 from django.http import HttpResponse
 from django.shortcuts import render
 import sqlite3
@@ -9,4 +11,5 @@ def index(request):
 
 def test():
     print("test")
+
 

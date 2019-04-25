@@ -4,8 +4,99 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import base64
+import random
+import time
 
+import requests
+from jieba import analyse
 from scrapy import signals
+
+# 获取随机头部
+from InternetSpider.settings import PROXIES
+
+
+class RandomUserAgent(object):
+    """Randomly rotate user agents based on a list of predefined ones"""
+
+    def __init__(self, agents):
+        self.agents = agents
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.settings.getlist('USER_AGENTS'))
+
+    def process_request(self, request, spider):
+        #print "**************************" + random.choice(self.agents)
+        request.headers.setdefault('User-Agent', random.choice(self.agents))
+
+# 获取settings.py文件的随机代理
+class ProxyMiddleware(object):
+    def process_request(self, request, spider):
+        # 这个是配置文件里的代码
+        proxy = random.choice(PROXIES)
+        if proxy['user_pass'] is not None:
+            request.meta['proxy'] = "http://%s" % proxy['ip_port']
+            # encoded_user_pass = base64.b64encode(proxy['user_pass'])
+            # request.headers['Proxy-Authorization'] = 'Basic ' + encoded_user_pass
+            print("**************ProxyMiddleware have pass************" + proxy['ip_port'])
+        else:
+            print("**************ProxyMiddleware no pass************" + proxy['ip_port'])
+            request.meta['proxy'] = "http://%s" % proxy['ip_port']
+
+# 阿布云
+class ABProxyMiddleware(object):
+    def process_request(self,request,spider):
+        # 代理服务器
+        # proxyHost = "http://http-cla.abuyun.com"
+        # proxyPort = "9030"
+        proxyServer = "http://http-dyn.abuyun.com:9020"
+        # 代理隧道验证信息
+        proxyUser = "H05Z5U9SXCRE3O3D"
+        proxyPass = "77AD782E0401FFA3"
+        proxyAuth = "Basic " + base64.urlsafe_b64encode(bytes((proxyUser + ":" + proxyPass), "ascii")).decode("utf8")
+        print("**************ProxyMiddleware************" )
+        request.meta["proxy"] = proxyServer
+        request.headers["Proxy-Authorization"] = proxyAuth
+
+class IPPOOlS(object):
+    # 初始化
+    def __init__(self,ip=""):
+        self.ip = ip
+        self.IPPOOL = []
+    # 请求处理
+    def process_request(self, request, spider):
+        # 先随机选择一个IP
+        # 这里填写无忧代理IP提供的API订单号（请到用户中心获取）
+        order = "96a61d1bda162d574947584f1376f572"
+        # # 获取IP的API接口
+        apiUrl = "http://api.ip.data5u.com/dynamic/get.html?order=" + order
+        # # 获取IP时间间隔，建议为5秒
+        fetchSecond = 5
+        # # 开始自动获取IP
+        # GetIpThread(apiUrl, fetchSecond).start()
+
+        if not self.IPPOOL or len(self.IPPOOL) < 100:
+            # while n<5:
+                # 获取IP列表
+            res = requests.get(apiUrl).content.decode()
+            # 按照\n分割获取到的IP
+            # IPPOOL = res.split('\n')
+            # print(res)
+            # for ip in res:
+            self.IPPOOL.append(res.split('\n')[0])
+            # print(self.IPPOOL)
+            # 休眠
+            time.sleep(fetchSecond)
+
+        thisip = random.choice(self.IPPOOL)
+        print(thisip)
+        time.sleep(fetchSecond)
+        print("**************当前使用的IP************" + thisip)
+        request.meta["proxy"] = "http://" + thisip
+
+
+
 
 
 class InternetspiderSpiderMiddleware(object):
@@ -55,7 +146,6 @@ class InternetspiderSpiderMiddleware(object):
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
 
-
 class InternetspiderDownloaderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
@@ -101,3 +191,4 @@ class InternetspiderDownloaderMiddleware(object):
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+

@@ -23,3 +23,18 @@ class hotItem(DjangoItem):
 #     search_score = Field() #搜索指数
 
 
+class InternetItem(Item):
+    # define the fields for your item here like:
+    # name = scrapy.Field()
+    _id = Field()
+    title = Field() #标题
+    describe = Field() # 简述
+    pub_time = Field() #报告时间
+    reporter = Field() #报告者或者来源
+    data_source = Field() #信息的链接
+    detail_url = Field() # 这个不一定要
+    content = Field() #正文
+    keywords = Field() #搜索的关键词组
+    keyword = Field()  # 搜索的关键词
+    release_time = Field() #爬取的时间
+    data_type = Field() #数据类型
