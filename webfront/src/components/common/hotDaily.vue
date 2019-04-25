@@ -130,6 +130,10 @@
 </script>
 
 <style scoped>
+  .el-table a {
+    text-decoration: none;
+    color: black;
+}
 .table-box{
   width: 1200px;
   margin: 20px auto;

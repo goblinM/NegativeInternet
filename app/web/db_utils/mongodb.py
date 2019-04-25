@@ -20,6 +20,8 @@ class MongoDBUtils:
 
     def searchByDoc(self, searchDoc, condi=None):
         resultDoc = {}
+        print(searchDoc)
+        print(condi)
         try:
             resultDoc = self.collection.find(searchDoc, condi)
             if resultDoc.count() == 0:
@@ -28,10 +30,10 @@ class MongoDBUtils:
             print(e)
         return resultDoc
 
-    def searchByDocSort(self, searchDoc, sortKey, ENDING, condi=None):
+    def searchByDocSort(self, searchDoc, sortKey, ENDING ,condi=None): #ENDING,
         resultDoc = {}
         try:
-            resultDoc = self.collection.find(searchDoc, condi).sort(sortKey, ENDING)
+            resultDoc = self.collection.find(searchDoc, condi).sort(sortKey, ENDING) #, ENDING
         except Exception as e:
             print(e)
         return resultDoc

@@ -8,25 +8,23 @@
               <div class="inline-block setting-name"><span class="">监测时间:</span>
               </div>
               <ul class="setting-tools font-size-0 inline-block">
-                <li>
-                  <span class="">今天</span>
-                </li>
-                <li class="active">
+
+                <li  @click="selectDay('1')" :class="{'active':timeselected=== '1'}">
                   <span class="">24小时</span>
                 </li>
-                <li class="">
+                <li class="" @click="selectDay('2')" :class="{'active':timeselected=== '2'}">
                   <span class="">2天</span>
                 </li>
-                <li class="">
+                <li class="" @click="selectDay('3')" :class="{'active':timeselected=== '3'}">
                   <span class="">3天</span>
                 </li>
-                <li class="">
+                <li class="" @click="selectDay('7')" :class="{'active':timeselected=== '7'}">
                   <span class="">7天</span>
                 </li>
-                <li class="">
+                <li class="" @click="selectDay('10')" :class="{'active':timeselected=== '10'}">
                   <span class="">10天</span>
                 </li>
-                <li class="">
+                <li class="" >
                   <span class="">自定义</span>
                 </li>
               </ul>
@@ -36,10 +34,10 @@
               </div>
               <ul class="setting-tools font-size-0 inline-block" id="dateTime">
 
-                <li id="dateTimeA_1" class="active">
+                <li id="dateTimeA_1"  @click="selectTime('-1')" :class="{'active':sortselected=== '-1'}">
                   <span class="">时间降序</span>
                 </li>
-                <li id="dateTimeA_2">
+                <li id="dateTimeA_2" @click="selectTime('1')" :class="{'active':sortselected=== '1'}">
                   <span class="">时间升序</span>
                 </li>
               </ul>
@@ -50,62 +48,58 @@
               <div class="inline-block font-size-0 left-setting">
                 <div class="inline-block setting-name"><span class="">信息属性:</span></div>
                 <ul class="setting-tools font-size-0 inline-block" id="attribute">
-                  <li id="attributeA_1" class="active" >
+                  <li id="attributeA_1"  @click="selectAttribute('all')" :class="{'active':attrselected=== 'all'}">
                     <span class="">全部</span>
                   </li>
-                  <li id="attributeA_2">
+                  <li id="attributeA_2" @click="selectAttribute('yes')" :class="{'active':attrselected=== 'yes'}">
                     <span class="">敏感</span>
                   </li>
-                  <li id="attributeA_3">
+                  <li id="attributeA_3" @click="selectAttribute('no')" :class="{'active':attrselected=== 'no'}">
                     <span class="">非敏感</span>
                   </li>
                 </ul>
               </div>
-              <div class="inline-block font-size-0 right-setting">
-                <div class="inline-block setting-name"><span class="">匹配方式:</span></div>
-                <ul class="setting-tools font-size-0 inline-block" id="matchTypes">
-                  <li id="matchTypeA_1" class="active" >
-                    <span class="">按全文</span>
-                  </li>
-                  <li id="matchTypeA_2" class="">
-                    <span class="">按标题</span>
-                  </li>
-                  <li id="matchTypeA_3" class="">
-                    <span class="">按正文</span>
-                  </li>
-
-                </ul>
-              </div>
-
-            </div>
-            <div class="setting-line font-size-0">
-              <div class="inline-block font-size-0  left-setting">
+              <div class="inline-block font-size-0  right-setting">
                  <div class="inline-block setting-name"><span class="">信息种类:</span></div>
                 <ul class="setting-tools font-size-0 inline-block" id="dataType">
-                  <li id="dataType_1" class="active" >
-                    <span class="">全部</span>
-                  </li>
-                  <li id="dataType_2" class="">
+                  <!--<li id="dataType_1" class="active" >-->
+                    <!--<span class="">全部</span>-->
+                  <!--</li>-->
+                  <li id="dataType_1" :class="{'active':selected=== 'financial'}" @click="selectDataType('financial')">
                     <span class="">金融</span>
                   </li>
-                  <li id="dataType_3" class="">
+                  <li id="dataType_2" :class="{'active':selected=== 'gov'}" @click="selectDataType('gov')">
                     <span class="">政治</span>
                   </li>
-                  <li id="dataType_4" class="">
+                  <li id="dataType_3" :class="{'active':selected=== 'amusement'}" @click="selectDataType('amusement')">
                     <span class="">娱乐</span>
                   </li>
-                  <li id="dataType_5" class="">
+                  <li id="dataType_4" :class="{'active':selected=== 'science'}" @click="selectDataType('science')">
                     <span class="">科技</span>
-                    <li id="dataType_6" class="">
+                    <li id="dataType_5" :class="{'active':selected=== 'social'}" @click="selectDataType('social')">
                     <span class="">社会</span>
                   </li>
-                  <li id="dataType_7" class="">
+                  <li id="dataType_6" :class="{'active':selected=== 'culture'}" @click="selectDataType('culture')">
                     <span class="">文化</span>
                   </li>
 
                 </ul>
                </div>
-              <div class="inline-block font-size-0  right-setting"></div>
+              <!--<div class="inline-block font-size-0 right-setting">-->
+                <!--<div class="inline-block setting-name"><span class="">匹配方式:</span></div>-->
+                <!--<ul class="setting-tools font-size-0 inline-block" id="matchTypes">-->
+                  <!--<li id="matchTypeA_1" class="active" >-->
+                    <!--<span class="">按全文</span>-->
+                  <!--</li>-->
+                  <!--<li id="matchTypeA_2" class="">-->
+                    <!--<span class="">按标题</span>-->
+                  <!--</li>-->
+                  <!--<li id="matchTypeA_3" class="">-->
+                    <!--<span class="">按正文</span>-->
+                  <!--</li>-->
+
+                <!--</ul>-->
+              <!--</div>-->
 
             </div>
 
@@ -113,49 +107,57 @@
         </div>
       </div>
       <div class="table-box">
-        <el-table :data="hotData">
+        <el-table :data="newsData">
           <el-table-column
-            prop="id"
             label="序号"
             align="center"
             width="50"
           >
+            <template slot-scope="scope">
+              <span>{{(currentPage-1)*news_size+scope.$index+1}}</span>
+            </template>
           </el-table-column>
           <el-table-column
-            prop="title"
+
             label="标题"
             align="center"
-            width="300"
+            width="350"
           >
+            <template slot-scope="scope">
+            <a :href="scope.row.data_source" target="_blank">{{scope.row.title}}</a>
+            </template>
           </el-table-column>
           <el-table-column
             prop="describe"
             label="描述"
             align="center"
-            width="350"
+            width="400"
           >
           </el-table-column>
           <el-table-column
-            prop="keyword"
+            prop="keywords"
             label="关键词"
             align="center"
             width="150"
           >
           </el-table-column>
           <el-table-column
-            prop="data_source"
+
             label="数据来源"
             align="center"
             width="100"
           >
+               <template slot-scope="scope">
+            <a :href="scope.row.data_source" target="_blank">{{scope.row.reporter}}</a>
+            </template>
           </el-table-column>
-          <el-table-column
-            prop="similar_news"
-            label="相似文章"
-            align="center"
-            width="100"
-          >
-          </el-table-column>
+          <!--<el-table-column-->
+            <!--prop="similar_news"-->
+            <!--label="相似文章"-->
+            <!--align="center"-->
+            <!--width="100"-->
+
+          <!--</el-table-column>-->
           <el-table-column
             prop="pub_time"
             label="报告时间"
@@ -165,6 +167,17 @@
           </el-table-column>
         </el-table>
       </div>
+        <div class="page_panel text-right">
+          <el-pagination v-if="news_total>2"
+            @size-change="handleSizeChange"
+            @current-change="handleCurrentChange"
+            :current-page="currentPage"
+            :page-sizes="[10,15,25,50]"
+            :page-size="news_size"
+            layout="total, sizes, prev, pager, next, jumper"
+            :total="news_total">
+          </el-pagination>
+        </div>
     </el-main>
   </el-container>
 </template>
@@ -174,7 +187,7 @@
     name: "newsWatch",
     data() {
       return {
-        hotData: [
+        newsData: [
           {
             id: "1",
             title: "历史转折中的刘强东",
@@ -231,13 +244,97 @@
           },
 
 
-        ]
+        ],
+        news_total:100,
+        currentPage:1,
+        news_size:10,
+        data_type:"financial",
+        time_sort:"-1",
+        day_limit:'1',
+        sensitive:"all",
+        selected:"financial",
+        attrselected:"all",
+        timeselected:"1",
+        sortselected:"-1"
+
       }
     },
+    created(){
+      this.get_news_data();
+    },
+    mounted(){
+
+    },
+    methods:{
+      get_news_data(){
+        let data = {
+          "csrfmiddlewaretoken":this.getCookie("csrftoken"),
+          "page":this.currentPage,
+          "page_size":this.news_size,
+          "data_type":this.data_type,
+          "time_sort":this.time_sort,
+          "day_limit":this.day_limit,
+          "sensitive":this.sensitive
+        };
+        console.log(data);
+        this.$http({
+          method:"POST",
+          url:this.$store.state.location+"/api/news/get_zixun_news/",
+          data:this.$Qs.stringify(data)
+        }).then(response=>{
+          let result = response.data;
+
+          this.news_total = result.news_total;
+          this.newsData = result.data;
+
+        }).catch(error=>{
+          console.log(error)
+        })
+      },
+      //改变每页的数量
+      handleSizeChange:function (PageSize) {
+         this.news_size = PageSize;
+        this.currentPage=1;
+        this.get_news_data();
+      },
+      //改变当前的页数
+      handleCurrentChange: function (currentPage) {
+        this.currentPage=currentPage;
+        this.get_news_data();
+      },
+      //信息类型筛选
+      selectDataType:function (val) {
+        this.data_type = val;
+        this.selected=val;
+        this.get_news_data();
+      },
+      //时间筛选
+      selectTime:function (val) {
+        this.time_sort = val;
+        this.sortselected=val;
+        this.get_news_data();
+      },
+      //天数筛选
+      selectDay:function (val) {
+        this.day_limit = val;
+        this.timeselected=val;
+        this.get_news_data();
+      },
+       //属性筛选
+      selectAttribute:function (val) {
+        this.sensitive = val;
+        this.attrselected=val;
+        this.get_news_data();
+      }
+    }
   }
 </script>
 
 <style scoped>
+  .el-table a {
+    text-decoration: none;
+    color: black;
+}
   .setting-line .setting-tools>li.active span {
     background-color: #47c3e1;
     color: #fff;

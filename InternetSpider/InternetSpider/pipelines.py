@@ -70,7 +70,8 @@ class MongoPipeline(object):
         try:
             self.db[collection_name].insert(dict(item))
         except:
-            res = item["_id"]
-            item["_id"] = res+"_"+ str(int(time.time()))
-            self.db[collection_name].insert(dict(item))
+            # res = item["_id"]
+            # item["_id"] = res+"_"+ str(int(time.time()))
+            # self.db[collection_name].insert(dict(item))
+            pass
         return item
