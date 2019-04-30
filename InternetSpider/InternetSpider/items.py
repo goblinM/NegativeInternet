@@ -38,3 +38,15 @@ class InternetItem(Item):
     keyword = Field()  # 搜索的关键词
     release_time = Field() #爬取的时间
     data_type = Field() #数据类型
+
+class ZhiHuItem(Item):
+    _id = Field()
+    id = Field()
+    question = Field() #问题基本信息
+    author = Field() #作者基本信息
+    url = Field() #回应作者的基本路径
+    voteup_count = Field() #点赞数
+    comment_count = Field() #评论数量
+    content = Field() #正文
+    excerpt = Field() #简介
+    keywords = Field() #关键字
