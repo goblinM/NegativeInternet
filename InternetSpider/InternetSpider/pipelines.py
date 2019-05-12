@@ -28,6 +28,7 @@ class HotPipeline(object):
 import pymongo
 from jieba import analyse
 
+# 关键词
 class KeyswordPipeline(object):
     """
     添加数据来源及抓取时间；
@@ -42,6 +43,7 @@ class KeyswordPipeline(object):
         item['keywords'] = keywords
         return item
 
+# 数据存储MongoDB
 class MongoPipeline(object):
     def __init__(self,mongo_url,mongo_db):
         self.mongo_url = mongo_url

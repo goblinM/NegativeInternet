@@ -6,7 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    location:'http://172.23.202.192:8000',
+    // location:'http://172.23.202.192:8000',
+    location:"http://192.168.0.105:8000",
     // location:'http://192.168.2.19:10000',
     // location:'http://218.77.58.168:10000',
     //location:'http://218.77.58.168:9099',

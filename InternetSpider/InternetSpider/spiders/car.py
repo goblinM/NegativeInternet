@@ -7,7 +7,6 @@ from scrapy import Request
 
 from InternetSpider.InternetSpider.items import ZhiHuItem
 
-
 class CarSpider(scrapy.Spider):
     name = 'car'
     allowed_domains = ['zhihu.sougou.com']

@@ -20,8 +20,6 @@ class MongoDBUtils:
 
     def searchByDoc(self, searchDoc, condi=None):
         resultDoc = {}
-        print(searchDoc)
-        print(condi)
         try:
             resultDoc = self.collection.find(searchDoc, condi)
             if resultDoc.count() == 0:
@@ -34,6 +32,18 @@ class MongoDBUtils:
         resultDoc = {}
         try:
             resultDoc = self.collection.find(searchDoc, condi).sort(sortKey, ENDING) #, ENDING
+        except Exception as e:
+            print(e)
+        return resultDoc
+
+    def searchByDocSortLimit(self, searchDoc, sortKey, ENDING ,size,condi=None): #ENDING,
+        resultDoc = {}
+        print(searchDoc)
+        print(sortKey)
+        print(ENDING)
+        print(size)
+        try:
+            resultDoc = self.collection.find(searchDoc, condi).sort(sortKey, ENDING).limit(size) #, ENDING
         except Exception as e:
             print(e)
         return resultDoc
@@ -60,3 +70,12 @@ class MongoDBUtils:
         except Exception as e:
             print(e)
         return "ok"
+
+    # 查找唯一值id
+    def distinctID(self,data):
+        item = None
+        try:
+            item = self.collection.distinct(data)
+        except Exception as e:
+            print(e)
+        return item
