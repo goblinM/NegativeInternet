@@ -66,7 +66,7 @@ class MongoPipeline(object):
 
     def process_item(self, item, spider):
         # collection_name = item.__class__.__name__
-        collection_name = "zixun_news" #Internet  china_news
+        collection_name = item["database_name"]#"zixun_news" Internet  china_news
         #如果存在更新，没有就插入 去重操作
         # self.db[collection_name].update({'url_token':item['url_token']},{"$set":item},True)
         try:

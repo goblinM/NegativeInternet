@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3485b77c-4822-4a2b-9765-ec3722d135af" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/analysisData/common_class/images/word_cloud_zhihu_paris.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/analysisData/common_class/images/word_count_zhihu_paris.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/analysisData/common_class/images/word_pie_zhihu_paris.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/analysisData/common_class/images/new.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/analysisData/common_class/images/new.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/analysisData/common_class/images/wordcount.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/analysisData/common_class/images/wordcount.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/analysisData/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/analysisData/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/web/db_utils/mongodb.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/web/db_utils/mongodb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webfront/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfront/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webfront/src/vuex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/webfront/src/vuex/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,7 +41,7 @@
     <SUITE FILE_PATH="coverage/NegativeInternet$event_trend.coverage" NAME="event_trend Coverage Results" MODIFIED="1557668994653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/analysisData/common_class" />
     <SUITE FILE_PATH="coverage/NegativeInternet$views.coverage" NAME="views Coverage Results" MODIFIED="1556108764344" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/web" />
     <SUITE FILE_PATH="coverage/NegativeInternet$sex_compare.coverage" NAME="sex_compare Coverage Results" MODIFIED="1557564897390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/analysisData/common_class" />
-    <SUITE FILE_PATH="coverage/NegativeInternet$word_cloud.coverage" NAME="word_cloud Coverage Results" MODIFIED="1557643959584" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/analysisData/common_class" />
+    <SUITE FILE_PATH="coverage/NegativeInternet$word_cloud.coverage" NAME="word_cloud Coverage Results" MODIFIED="1557931575382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/analysisData/common_class" />
     <SUITE FILE_PATH="coverage/NegativeInternet$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1554897866491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/spider" />
     <SUITE FILE_PATH="coverage/NegativeInternet$vote_top.coverage" NAME="vote_top Coverage Results" MODIFIED="1557564176768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/analysisData/common_class" />
     <SUITE FILE_PATH="coverage/NegativeInternet$zhihuuser_spider.coverage" NAME="zhihuuser_spider Coverage Results" MODIFIED="1557554335045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/spider" />
@@ -58,34 +76,118 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mongodb.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/web/db_utils/mongodb.py">
+      <file leaf-file-name="chinanews_amusement.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+            <state relative-caret-position="275">
+              <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
               <folding>
-                <element signature="e#21#35#0" expanded="true" />
+                <element signature="e#24#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="event_trend.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/event_trend.py">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-347">
-              <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+            <state relative-caret-position="100">
+              <caret line="154" column="48" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="48" />
+              <folding>
+                <element signature="e#425#434#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_view.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/web/web_views/news_view.py">
+      <file leaf-file-name="hotdaily.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="33" column="99" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+            <state relative-caret-position="172">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
               <folding>
-                <element signature="e#44#55#0" expanded="true" />
+                <element signature="e#70#81#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinanews_culture.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinanews_financial.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <folding>
+                <element signature="e#90#101#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinanews_gov.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinanews_science.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chinanews_social.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="icu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1600">
+              <caret line="64" column="94" selection-start-line="64" selection-start-column="94" selection-end-line="64" selection-end-column="94" />
+              <folding>
+                <element signature="e#24#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,57 +220,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/webfront/src/components/common/dataAnalysis.vue" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/__init__.py" />
-        <option value="$PROJECT_DIR$/app/web/webSerializers.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/run.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/scrapy.cfg" />
-        <option value="$PROJECT_DIR$/app/web/models.py" />
-        <option value="$PROJECT_DIR$/NegativeInternet/settings.py" />
-        <option value="$PROJECT_DIR$/webfront/src/components/common/HomePage.vue" />
-        <option value="$PROJECT_DIR$/webfront/src/main.js" />
-        <option value="$PROJECT_DIR$/app/web/web_views/hot_view.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_curture.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_secience.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/middlewares.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py" />
-        <option value="$PROJECT_DIR$/NegativeInternet/urls.py" />
-        <option value="$PROJECT_DIR$/app/web/db_utils/db_tools.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py" />
-        <option value="$PROJECT_DIR$/app/web/views.py" />
-        <option value="$PROJECT_DIR$/webfront/src/components/common/hotDaily.vue" />
-        <option value="$PROJECT_DIR$/app/web/web_views/news_view.py" />
         <option value="$PROJECT_DIR$/webfront/src/components/common/newsWatch.vue" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/NegativeInternet-tree.md" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py" />
         <option value="$PROJECT_DIR$/webfront/src/vuex/index.js" />
         <option value="$PROJECT_DIR$/webfront/src/router/index.js" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/app/spider/setting.py" />
         <option value="$PROJECT_DIR$/app/spider/redis_utils.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/items.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py" />
-        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py" />
         <option value="$PROJECT_DIR$/app/spider/zhihuuser_spider.py" />
-        <option value="$PROJECT_DIR$/app/web/db_utils/mongodb.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/vote_top.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/comment_top.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/sex_compare.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/gender_compare.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/chineseStopWords.txt" />
-        <option value="$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/uid.txt" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/loaction.py" />
         <option value="$PROJECT_DIR$/app/analysisData/common_class/event_trend.py" />
+        <option value="$PROJECT_DIR$/app/web/db_utils/mongodb.py" />
+        <option value="$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py" />
+        <option value="$PROJECT_DIR$/app/analysisData/views.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py" />
+        <option value="$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/items.py" />
+        <option value="$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/spiders/hot.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/amusement.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/items.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/items.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/financial.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/science.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/gov.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/social.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/middlewares.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/middlewares.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/settings.py" />
+        <option value="$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/settings.py" />
+        <option value="$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/settings.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/items.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py" />
+        <option value="$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -187,10 +289,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="617" />
-    <option name="y" value="35" />
-    <option name="width" value="1164" />
-    <option name="height" value="1039" />
+    <option name="x" value="755" />
+    <option name="width" value="1165" />
+    <option name="height" value="1030" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -212,44 +313,6 @@
             <path>
               <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
               <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="analysisData" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="analysisData" type="462c0819:PsiDirectoryNode" />
-              <item name="common_class" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="db_utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="web_views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
               <item name="InternetSpider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -257,13 +320,6 @@
               <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
               <item name="InternetSpider" type="462c0819:PsiDirectoryNode" />
               <item name="InternetSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NegativeInternet" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NegativeInternet" type="462c0819:PsiDirectoryNode" />
-              <item name="InternetSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="InternetSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.event_trend">
+  <component name="RunManager" selected="Python.word_cloud">
     <configuration name="event_trend" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="NegativeInternet" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -435,9 +491,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.word_cloud" />
         <item itemvalue="Python.event_trend" />
         <item itemvalue="Python.loaction" />
-        <item itemvalue="Python.word_cloud" />
         <item itemvalue="Python.sex_compare" />
         <item itemvalue="Python.vote_top" />
       </list>
@@ -485,12 +541,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="6" weight="0.32956153" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.6379067" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49646392" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5304102" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992928" weight="0.20174263" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46958983" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5120226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992928" visible="true" weight="0.31032172" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.3297587" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3281471" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.58082974" />
       <window_info anchor="right" id="SciView" order="3" weight="0.38739946" />
       <window_info id="Structure" order="1" sideWeight="0.5007072" side_tool="true" weight="0.17024128" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -516,215 +572,8 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/webfront/src/vuex/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webfront/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webfront/src/components/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-409">
-          <caret line="54" column="12" lean-forward="true" selection-start-line="54" selection-start-column="12" selection-end-line="54" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/test_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/run.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/scheduler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-796" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/error.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/web_views/hot_view.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../project_venv/Lib/site-packages/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="1676" column="8" selection-start-line="1676" selection-start-column="8" selection-end-line="1676" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/redis_db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/redis_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/setting.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="e#161#171#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/proxypool/crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="83" column="24" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="59" column="46" selection-start-line="59" selection-start-column="46" selection-end-line="59" selection-end-column="46" />
-          <folding>
-            <element signature="e#193#206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="46" selection-start-line="46" selection-end-line="59" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="79" selection-start-line="79" selection-end-line="82" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/db_utils/db_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="53" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="13" lean-forward="true" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/spider/zhihuuser_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="36" column="61" selection-start-line="36" selection-start-column="61" selection-end-line="36" selection-end-column="61" />
-          <folding>
-            <element signature="e#48#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/images/wordcount.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/web/web_views/user_view.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -733,109 +582,413 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/web_views/news_view.py">
+    <entry file="file://$PROJECT_DIR$/app/web/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="99" selection-start-line="33" selection-start-column="99" selection-end-line="33" selection-end-column="99" />
+        <state>
           <folding>
-            <element signature="e#44#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/chineseStopWords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7121">
-          <caret line="1494" column="2" selection-start-line="1494" selection-start-column="2" selection-end-line="1494" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/输出词频图标.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/输出pie极坐标图.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/new.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/wordcount.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/wordpie.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/images/e.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/imageswordcount.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/imageswordpie.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1604">
-          <caret line="73" column="51" lean-forward="true" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="51" />
-          <folding>
-            <element signature="e#54#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/uid.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/uid2.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/loaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="467" column="18" lean-forward="true" selection-start-line="467" selection-start-column="18" selection-end-line="467" selection-end-column="18" />
-          <folding>
-            <element signature="e#80#111#0" expanded="true" />
-            <element signature="e#180#7458#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/gender_compare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="12" column="49" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/comment_top.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/vote_top.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/web/db_utils/mongodb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-          <folding>
-            <element signature="e#21#35#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/event_trend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347">
-          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        <state relative-caret-position="-471">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/gender_compare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/loaction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="462" column="24" lean-forward="true" selection-start-line="462" selection-start-column="24" selection-end-line="462" selection-end-column="24" />
+          <folding>
+            <element signature="e#205#7109#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/vote_top.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/comment_top.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/images/new.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/images/word_count_zhihu_paris.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/images/word_pie_zhihu_paris.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/common_class/word_cloud.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="102" column="16" selection-start-line="102" selection-start-column="8" selection-end-line="102" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/web/db_utils/mongodb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+          <folding>
+            <element signature="e#21#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/analysisData/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="654">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/run.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="7" selection-start-line="6" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="e#161#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/BaiduSpider/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#153#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#153#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#153#166#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/amusement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/spiders/hot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/financial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding>
+            <element signature="e#90#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/gov.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/science.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-821">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#195#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/spiders/social.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="e#245#1907#0" />
+            <element signature="e#1961#3604#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="95" column="50" lean-forward="true" selection-start-line="6" selection-end-line="95" selection-end-column="50" />
+          <folding>
+            <element signature="e#3306#4968#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+          <folding>
+            <element signature="e#195#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ZhihuSpider/ZhihuSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/BaiduSpider/BaiduSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="170" lean-forward="true" selection-start-line="15" selection-end-line="170" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebSpider/ChinaSpider/ChinaSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-125">
+          <caret line="13" column="15" lean-forward="true" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding>
+            <element signature="e#245#1907#0" />
+            <element signature="e#1961#3604#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/car.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="58" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/paris.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="64" column="94" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="94" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding>
+            <element signature="e#153#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1700">
+          <caret line="68" column="45" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding>
+            <element signature="e#193#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_amusement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="17" column="12" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_culture.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_financial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+          <folding>
+            <element signature="e#90#101#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_gov.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_science.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/icu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="64" column="94" selection-start-line="64" selection-start-column="94" selection-end-line="64" selection-end-column="94" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/chinanews_social.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="154" column="48" selection-start-line="154" selection-start-column="5" selection-end-line="154" selection-end-column="48" />
+          <folding>
+            <element signature="e#425#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/InternetSpider/InternetSpider/spiders/hotdaily.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#70#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
         </state>
       </provider>
     </entry>

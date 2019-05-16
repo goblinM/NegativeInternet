@@ -15,6 +15,12 @@ class HotSpider(Spider):
     allowed_domains = ['top.baidu.com']
     start_urls = ['http://top.baidu.com/']
     hot_url = r"http://top.baidu.com/buzz?b=1&c=513&fr=topbuzz_b341_c513"
+    # 自定义配置
+    custom_settings = {
+        'ITEM_PIPELINES': {
+            'InternetSpider.pipelines.HotPipeline': 300
+        }
+    }
 
     def start_requests(self):
         yield Request(url=self.hot_url, callback=self.parse)

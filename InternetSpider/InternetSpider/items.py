@@ -38,6 +38,7 @@ class InternetItem(Item):
     keyword = Field()  # 搜索的关键词
     release_time = Field() #爬取的时间
     data_type = Field() #数据类型
+    database_name = Field() #存放数据的数据库名
 
 class ZhiHuItem(Item):
     _id = Field()
@@ -50,3 +51,4 @@ class ZhiHuItem(Item):
     content = Field() #正文
     excerpt = Field() #简介
     keywords = Field() #关键字
+    database_name = Field()  # 存放数据的数据库名

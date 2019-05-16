@@ -4,7 +4,7 @@ import re
 
 from scrapy import Spider, Request
 
-from InternetSpider.InternetSpider.items import ZhiHuItem
+from InternetSpider.items import ZhiHuItem
 
 
 class ParisSpider(Spider):
@@ -63,6 +63,7 @@ class ParisSpider(Spider):
                         else:  # 这里是为了保持格式一致，避免有些字段出现有些字段没有出现
                             icu[field] = ""
                         icu["_id"] = da.get("question").get("title") + "_" + str(da.get("id"))
+                        icu["database_name"] = "zhihu_paris"
                     yield icu
                 # 这块是知乎回答的分页，知乎返回的数据是json格式的
                 try:

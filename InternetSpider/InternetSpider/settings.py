@@ -8,6 +8,14 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import os
+import sys
+#
+# sys.path.append(os.path.dirname(os.path.abspath('.')))
+# os.environ['DJANGO_SETTINGS_MODULE'] = 'NegativeInternet.settings'
+# This is required only if Django Version > 1.8
+# import django
+# django.setup()
 
 BOT_NAME = 'InternetSpider'
 
@@ -95,7 +103,8 @@ SCHEDULER = "scrapy_redis.scheduler.Scheduler"
 #去重
 DUPEFILTER_CLASS = "scrapy_redis.dupefilter.RFPDupeFilter"
 
-REDIS_URL = 'redis://root:123456@127.0.0.1:6379'
+# :123456
+REDIS_URL = 'redis://root@127.0.0.1:6379'
 DOWNLOAD_FAIL_ON_DATALOSS = False
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -131,7 +140,7 @@ DOWNLOAD_FAIL_ON_DATALOSS = False
 DOWNLOADER_MIDDLEWARES = {
    'InternetSpider.middlewares.RandomUserAgent': 1,
     # 'InternetSpider.middlewares.ProxyMiddleware':110,
-    'InternetSpider.middlewares.ABProxyMiddleware':110
+    # 'InternetSpider.middlewares.ABProxyMiddleware':110
 }
 
 # Enable or disable extensions

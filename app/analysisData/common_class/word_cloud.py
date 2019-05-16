@@ -13,18 +13,19 @@ import matplotlib.pyplot as plt
 import numpy as np
 class Word:
     def __init__(self,collectionName):
+        self.data_name = collectionName
         self.mongo = MongoDBUtils(collectionName)
         self.path = r"D:\Django\NegativeInternet\app\analysisData\common_class\images"
         self.font = r"D:\Django\NegativeInternet\app\analysisData\msyh.ttc"
         # self.font_set = FontProperties(fname=r"D:\Django\NegativeInternet\app\analysisData\msyh.ttc", size=12)
         self.alice_mask = np.array(Image.open(self.path+r'\e.jpg'))
 
-    def keywordcloud(self):
+    def keywordcloud(self,keyword):
         """
         生成词云的图片
         :return: 图片
         """
-        curInfo = self.mongo.searchByDoc({"_id":{"$regex":"巴黎圣母院"}})
+        curInfo = self.mongo.searchByDoc({"_id":{"$regex":keyword}})
         print(curInfo.count())
         # stopwords = set(STOPWORDS)
         self.stopwords = ["游戏","手机","没有","时候","可能","快递","有点","东西","女人","不能","觉得","看到"]
@@ -44,11 +45,12 @@ class Word:
             stopwords=self.stopwords
         )
         wc.generate_from_text(self.keywords)
+
         plt.imshow(wc)
         plt.axis("off")
         plt.figure()
         plt.show()
-        wc.to_file(self.path+r"\new.png")
+        wc.to_file(self.path+r"\word_cloud_"+self.data_name+".png")
         self.mongo.close()
 
     def wordcount(self):
@@ -72,7 +74,7 @@ class Word:
         plt.xlabel(u'出现次数', fontsize=20, labelpad=5)
         plt.ylabel(u'关键词', fontsize=20, labelpad=5)
         # plt.title(u'涡流发生器对激波串振荡的控制', fontsize=25)
-        plt.savefig(self.path+u'\wordcount')
+        plt.savefig(self.path+u'\word_count_'+self.data_name)
         plt.show()
 
     def wordpie(self):
@@ -95,13 +97,20 @@ class Word:
         for r, bar in zip(radii, bars):
             bar.set_facecolor(plt.cm.viridis(r / 10))
             bar.set_alpha(0.5)
-        plt.savefig(self.path+u'\wordpie')
+        plt.savefig(self.path+u'\word_pie_'+self.data_name)
         plt.show()
 
+    def get_data(self):
+        keywords_list = self.keywords.split()
+        for k in list(keywords_list):
+            if k in self.stopwords:
+                keywords_list.remove(k)
+        top100 = dict(Counter(keywords_list).most_common(100))
+        return top100
 
 if __name__ == '__main__':
     obj = Word('zhihu_paris')
-    obj.keywordcloud()
+    obj.keywordcloud("巴黎圣母院")
     obj.wordcount()
     obj.wordpie()
 

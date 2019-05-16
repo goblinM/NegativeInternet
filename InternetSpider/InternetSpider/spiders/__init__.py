@@ -6,7 +6,7 @@ import sys
 import os
 import django
 
-sys.path.append("../../NegativeInternet") #具体路径
+sys.path.append("../../../NegativeInternet") #具体路径
 os.environ.setdefault('DJANGO_SETTINGS_MODULE','NegativeInternet.settings')
 django.setup()
 #

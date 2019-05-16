@@ -16,13 +16,13 @@ class ChinanewsSecienceSpider(Spider):
     allowed_domains = ['sou.chinanews.com']
     start_urls = ['http://sou.chinanews.com/']
     keyword = "科技"
-    page = 326
+    page = 0
     formdata = {
         "q": keyword,
         "ps": "10",
         "start": "0",
         "sort": "pubtime",
-        "time_scope": "365",
+        "time_scope": "30",
         "channel": "all",
         "adv": "1",
         'day1': '',
@@ -151,6 +151,7 @@ class ChinanewsSecienceSpider(Spider):
                 internet['release_time'] = int(time.time())
                 internet["_id"] = internet["title"].strip()
                 internet["data_type"] = "science"
+                internet["database_name"] = "zixun_news"
                 yield internet
             else:
                 print(response.status)

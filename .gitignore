@@ -1,4 +1,4 @@
-/.idea
+*.idea
 # Python:
 *.py[cod]
 *.pyc
@@ -8,3 +8,4 @@
 *.vscode
 *.db
 dist
+*.xml

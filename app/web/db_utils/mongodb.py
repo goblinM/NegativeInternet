@@ -38,10 +38,10 @@ class MongoDBUtils:
 
     def searchByDocSortLimit(self, searchDoc, sortKey, ENDING ,size,condi=None): #ENDING,
         resultDoc = {}
-        print(searchDoc)
-        print(sortKey)
-        print(ENDING)
-        print(size)
+        # print(searchDoc)
+        # print(sortKey)
+        # print(ENDING)
+        # print(size)
         try:
             resultDoc = self.collection.find(searchDoc, condi).sort(sortKey, ENDING).limit(size) #, ENDING
         except Exception as e:
