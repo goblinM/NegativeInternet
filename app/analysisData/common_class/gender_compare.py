@@ -11,6 +11,7 @@ from app.web.db_utils.mongodb import MongoDBUtils
 class Gender:
     def __init__(self,collectionName):
         self.mongo = MongoDBUtils(collectionName)
+        self.data_name = collectionName
 
     # 女性
     def female(self):
@@ -26,7 +27,7 @@ class Gender:
 
     # 未知性
     def unknowmale(self):
-        unknow_count = self.mongo.searchByDoc({"author.gender": 0}).count()
+        unknow_count = self.mongo.searchByDoc({"author.gender": -1}).count()
         self.mongo.close()
         return unknow_count
 

@@ -3,6 +3,7 @@
 created by goblinM 2019.5.12
 词云生成（热点词，关键字词云）
 """
+import os
 from collections import Counter
 
 from matplotlib.font_manager import FontProperties
@@ -25,17 +26,24 @@ class Word:
         生成词云的图片
         :return: 图片
         """
-        curInfo = self.mongo.searchByDoc({"_id":{"$regex":keyword}})
-        print(curInfo.count())
+        if self.data_name == "zhihu_icu":
+            curInfo = self.mongo.searchByDoc({"question.title": {"$regex": keyword,"$options": "i"}})
+        else:
+            curInfo = self.mongo.searchByDoc({"_id":{"$regex":keyword,"$options": "i"}})
+        # print(curInfo.count())
         # stopwords = set(STOPWORDS)
         self.stopwords = ["游戏","手机","没有","时候","可能","快递","有点","东西","女人","不能","觉得","看到"]
-        with open('chineseStopWords.txt','r',encoding='gbk') as r:
+        with open(r'D:\Django\NegativeInternet\app\analysisData\common_class\chineseStopWords.txt','r',encoding='gbk') as r:
             for w in r.readlines():
                 self.stopwords.append(w)
         self.stopwords = set(self.stopwords)
         self.keywords = ""
         for data in curInfo:
-            self.keywords = self.keywords +" "+data.get("keywords")
+            k = data.get("keywords")
+            if k:
+                self.keywords = self.keywords +" "+k
+            else:
+                continue
         wc = WordCloud(
             background_color='white',
             width=1000,
@@ -50,6 +58,8 @@ class Word:
         plt.axis("off")
         plt.figure()
         plt.show()
+        if os.path.exists(self.path+r"\word_cloud_"+self.data_name+".png") == True:
+            os.remove(self.path+r"\word_cloud_"+self.data_name+".png")
         wc.to_file(self.path+r"\word_cloud_"+self.data_name+".png")
         self.mongo.close()
 
@@ -74,6 +84,8 @@ class Word:
         plt.xlabel(u'出现次数', fontsize=20, labelpad=5)
         plt.ylabel(u'关键词', fontsize=20, labelpad=5)
         # plt.title(u'涡流发生器对激波串振荡的控制', fontsize=25)
+        if os.path.exists(self.path+u'\word_count_'+self.data_name) == True:
+            os.remove(self.path+u'\word_count_'+self.data_name)
         plt.savefig(self.path+u'\word_count_'+self.data_name)
         plt.show()
 
@@ -97,6 +109,8 @@ class Word:
         for r, bar in zip(radii, bars):
             bar.set_facecolor(plt.cm.viridis(r / 10))
             bar.set_alpha(0.5)
+        if os.path.exists(self.path+u'\word_pie_'+self.data_name) == True:
+            os.remove(self.path+u'\word_pie_'+self.data_name)
         plt.savefig(self.path+u'\word_pie_'+self.data_name)
         plt.show()
 
@@ -106,7 +120,13 @@ class Word:
             if k in self.stopwords:
                 keywords_list.remove(k)
         top100 = dict(Counter(keywords_list).most_common(100))
-        return top100
+        word_data = []
+        for k,v in top100.items():
+            word_data.append({
+                "name":k,
+                "value":v
+            })
+        return word_data
 
 if __name__ == '__main__':
     obj = Word('zhihu_paris')

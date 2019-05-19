@@ -61,7 +61,7 @@ export default new Router({
       ]
     },
     {
-       path:"/dataReport",
+       path:"/dataReport/:data_name",
       name:'dataReport',
       component:dataReport
     }

@@ -21,37 +21,36 @@
             <ul class="font-size-0">
               <li class="part-three pr20">
                 <router-link
-                  :to="{name:'dataReport'}"
+                  :to="'/dataReport/zhihu_icu/'"
                   target="_blank">
                   <div class="case-desc-image no-pics">
                     <img src="../../assets/996icusmall.jpg" alt="996icu">
                   </div>
                 </router-link>
                 <div class="case-desc-title pr20">
-                  <span><router-link :to="{name:'dataReport'}"
-                    target="_blank" style="color: #fff">案例展示</router-link></span>
+                  <span><router-link :to="'/dataReport/zhihu_icu/'" target="_blank" style="color: #fff" >案例展示</router-link></span>
                 </div>
               </li>
               <li class="part-three pr10 pl10">
-                <router-link :to="{name:'dataReport'}"
+                <router-link :to="'/dataReport/zhihu_paris/'"
                   target="_blank">
                   <div class="case-desc-image no-pics">
                     <img src="../../assets/parissmall.jpg" alt="hire_paris">
                   </div>
                 </router-link>
                 <div class="case-desc-title">
-                  <span><router-link :to="{name:'dataReport'}"
+                  <span><router-link :to="'/dataReport/zhihu_paris/'"
                     target="_blank" style="color: #fff">案例展示</router-link></span>
                 </div>
               </li>
               <li class="part-three pl20">
-                <router-link :to="{name:'dataReport'}" target="_blank">
+                <router-link :to="'/dataReport/zhihu_car/'" target="_blank">
                   <div class="case-desc-image no-pics">
                     <img src="../../assets/benchismall.jpg" alt="奔驰">
                   </div>
                 </router-link>
                 <div class="case-desc-title pr20">
-                  <span><router-link  :to="{name:'dataReport'}"
+                  <span><router-link  :to="'/dataReport/zhihu_car/'"
                     target="_blank" style="color: #fff">案例展示</router-link></span>
                 </div>
               </li>
@@ -75,7 +74,25 @@
     },
     mounted(){},
     created(){},
-    methods:{},
+    methods:{
+      // GetReport(data_name,keywords){
+      //   let data = {
+      //     "data_name": data_name,
+      //     "keywords": keywords,
+      //     "csrfmiddlewaretoken": this.getCookie('csrftoken')
+      //   };
+      //   this.$http({
+      //       url: this.$store.state.location + "/api_report/",
+      //       method: "POST",
+      //       data: this.$Qs.stringify(data),
+      //   }).then(response =>{
+      //     let result = response.data;
+      //     console.log(result['data'])
+      //   }).catch(error =>{
+      //     console.log(error);
+      //   })
+      // }
+    },
 
   }
 </script>

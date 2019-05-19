@@ -447,7 +447,7 @@ class Location:
                             # elif data.get("name")+"" in city_province.keys():
                             #     location_list.append(city_province.get(data.get("name")+""))
                             else:
-                                print(data.get("name"))
+                                # print(data.get("name"))
                                 for reg in province_list:
                                     if reg in data.get("name"):
                                         location_list.append(reg + "")
@@ -460,7 +460,13 @@ class Location:
 
         location_dict = Counter(location_list)
         print(location_dict)
-        return dict(location_dict)
+        location_data = []
+        for k,v in dict(location_dict).items():
+            location_data.append({
+                "name":k,
+                "value":v
+            })
+        return location_data
 
 
 if __name__ == '__main__':

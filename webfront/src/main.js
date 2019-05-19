@@ -11,6 +11,10 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI);
 
+//引入jquery
+import jquery from 'jquery'
+Vue.prototype.$jquery = jquery;
+
 //引入axios
 import axios from 'axios'
 Vue.prototype.$http = axios;
@@ -20,12 +24,18 @@ import echarts from 'echarts'
 Vue.use(echarts);
 Vue.prototype.$echarts = echarts;
 
+//引入echarts-wordcloud 词云
+import wordcloud from 'echarts-wordcloud'
+Vue.use(wordcloud);
+Vue.prototype.$wordcloud = wordcloud;
+
 //引入qs
 import Qs from 'qs'
 Vue.use(Qs);
 Vue.prototype.$Qs = Qs;
 
 import { Loading,Message } from 'element-ui'
+import filter from './filter/filter'
 // Vue.use(store);
 // Vue.prototype.$store = store;
 
@@ -136,6 +146,39 @@ Vue.prototype.$responseInterceptor = axios.interceptors.response.use(data => {
 //     next();
 //   }
 // })
+Vue.component('remote-script', {
+
+    render: function (createElement) {
+        var self = this;
+        return createElement('script', {
+            attrs: {
+                type: 'text/javascript',
+                src: this.src
+            },
+            on: {
+                load: function (event) {
+                    self.$emit('load', event);
+                },
+                error: function (event) {
+                    self.$emit('error', event);
+                },
+                readystatechange: function (event) {
+                    if (this.readyState == 'complete') {
+                        self.$emit('load', event);
+                    }
+                }
+            }
+        });
+    },
+
+    props: {
+        src: {
+            type: String,
+            required: true
+        }
+    }
+});
+
 new Vue({
   el: '#app',
   router,

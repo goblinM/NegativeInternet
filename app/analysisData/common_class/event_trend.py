@@ -9,9 +9,15 @@ from app.web.db_utils.mongodb import MongoDBUtils
 class Event:
     def __init__(self,collectionName):
         self.mongo = MongoDBUtils(collectionName)
+        self.data_name = collectionName
 
     def trend(self,keyword):
-        curInfo = self.mongo.searchByDocSortLimit({"_id":{"$regex":keyword}},"voteup_count",-1,500)
+        if self.data_name == "zhihu_icu":
+            # curInfo = self.mongo.searchByDoc({"question.title": {"$regex": keyword,"$options": "i"}})
+            curInfo = self.mongo.searchByDocSortLimit({"question.title": {"$regex": keyword,"$options": "i"}}, "voteup_count", -1, 500)
+        else:
+            curInfo = self.mongo.searchByDocSortLimit({"_id":{"$regex": keyword,"$options": "i"}}, "voteup_count", -1, 500)
+
         question_id = []
         # print(question_id)
         # question_id = list(set(question_id))
@@ -35,7 +41,6 @@ class Event:
                 "comment_count":comment_count,
                 "voteup_count":voteup_count
             })
-        print(top[:10])
         return top
 
 if __name__ == '__main__':

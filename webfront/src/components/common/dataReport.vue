@@ -3,19 +3,18 @@
     <el-main>
       <div class="page-container reportWeb rel">
         <ul id="nav2">
-          <li class="" id="r1"><a href="#pr1">事件简介</a></li>
-          <li id="r2" class="current"><a href="#pr2">事件走势</a></li>
-          <li id="r3" class=""><a href="#pr3">网站统计</a></li>
-          <li id="r4" class=""><a href="#pr4">数据类型</a></li>
-          <li id="r5"><a href="#pr5">关键词云</a></li>
-          <li id="r6"><a href="#pr6">热门信息</a></li>
-          <li id="r7"><a href="#pr7">热点网民</a></li>
-          <li id="r8"><a href="#pr8">传播路径</a></li>
-          <li id="r9"><a href="#pr9">相关词</a></li>
-          <li id="r10"><a href="#pr10">网民观点</a></li>
-          <li id="r11"><a href="#pr11">舆情总结</a></li>
+          <li id="r1" @click="onePageNav('1')" :class="{'current':liselected=== '1'}"><a href="#pr1">评论统计</a></li>
+          <li id="r2" @click="onePageNav('2')" :class="{'current':liselected=== '2'}"><a href="#pr2">点赞统计</a></li>
+          <li id="r3" @click="onePageNav('3')" :class="{'current':liselected=== '3'}"><a href="#pr3">男女比例</a></li>
+          <li id="r4" @click="onePageNav('4')" :class="{'current':liselected=== '4'}"><a href="#pr4">地域分布</a></li>
+          <li id="r5" @click="onePageNav('5')" :class="{'current':liselected=== '5'}"><a href="#pr5">词云统计</a></li>
+          <li id="r6" @click="onePageNav('6')" :class="{'current':liselected=== '6'}"><a href="#pr6">负面走势</a></li>
+          <li id="r7" @click="onePageNav('7')" :class="{'current':liselected=== '7'}"><a href="#pr7">高频词汇</a></li>
+          <li id="r8" @click="onePageNav('8')" :class="{'current':liselected=== '8'}"><a href="#pr8">情感分析</a></li>
+
         </ul>
         <!--分析完毕 start-->
+
         <div class="reportPreview">
           <div class="logo">
           </div>
@@ -28,7 +27,7 @@
                     <li>
                       <div class="text tool tools">
                         <h1 id="analysisTitle" contenteditable="false" class="contenteditable">
-                          携程亲子园网络传播分析报告
+                          {{report_name}}
                         </h1>
                       </div>
                     </li>
@@ -36,15 +35,14 @@
                 </div>
               </div>
             </div>
-
             <!--报告标题 end-->
             <div class="reportBox ui-sortable">
-              <!--事件简介 start-->
+              <!--评论统计 start-->
               <div class="row-fluid" id="ui-accordion-1" name="r1">
                 <div class="textShow">
                   <div class="tit" id="pr1">
                     <div class="text">
-                      <h2 id="contentTitle1" contenteditable="false" class="contenteditable modification">事件简介</h2>
+                      <h2 id="contentTitle1" contenteditable="false" class="contenteditable modification">评论统计</h2>
                     </div>
                   </div>
 
@@ -53,202 +51,715 @@
                       <div class="text tool tools">
 
                         <div contenteditable="false" class="textCon contenteditable" id="introduce">
-                          本报告围绕关键词“携程+(虐童|亲子|幼儿|芥末|虐待)”，对2017/11/07 00:00~2017/11/17
-                          23:59期间，互联网上采集到的846954条信息进行了深入分析。全网声量最高峰出现在2017/11/09 00:00:00，共产生342849篇相关讯息；事件源头于2017/11/07
-                          00:02分发布在携程游记上，题名为『：爱在深秋 -
-                          昌平游记攻略【携程攻略】』。后续报道主要来源于新浪微博、微信、搜狐网、今日头条、凤凰新闻等几大站点。总体来说，整个事件的发展趋势较为突出，详细报告如下。
+                          <div class="y2 y2_1 float_l" style="width: 100%;">
+                            <ul v-for="item in comment_data">
+                              <li>
+                                <p>{{item.author.name}}</p>
+                                <p></p>
+                                <div class="tx"><img
+                                  :src=item.author.avatar_url>
+                                </div>
+                                <p></p>
+                                  <p>描述：{{item.excerpt|filterString(40)}}</p>
+                                <p>评论数：{{item.comment_count}}</p></li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </li>
                   </ul>
                 </div>
               </div>
-
-            <!--事件简介 end-->
-            <!--事件走势 start-->
-            <div class="row-fluid" id="ui-accordion-2" name="r2">
-              <div class="textShow">
-                <div class="tit" id="pr2">
-                  <div class="text">
-                    <h2 id="contentTitle2" contenteditable="false" class="contenteditable modification">事件走势</h2>
+              <!--评论统计 end-->
+              <!--点赞统计 start-->
+              <div class="row-fluid" id="ui-accordion-2" name="r2">
+                <div class="textShow">
+                  <div class="tit" id="pr2">
+                    <div class="text">
+                      <h2 id="contentTitle2" contenteditable="false" class="contenteditable modification">点赞统计</h2>
+                    </div>
                   </div>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+
+                        <div contenteditable="false" class="textCon contenteditable" id="vote">
+                          <div class="y2 y2_1 float_l" style="width: 100%;">
+                            <ul v-for="item in vote_data">
+                              <li>
+                                <p>{{item.author.name}}</p>
+                                <p></p>
+                                <div class="tx"><img
+                                  :src=item.author.avatar_url>
+                                </div>
+                                <p></p>
+                                <p>描述：{{item.excerpt|filterString(40)}}</p>
+                                <p>点赞数：{{item.voteup_count}}</p></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
+              </div>
+              <!--点赞统计 end-->
+              <!--男女比例 start-->
+              <div class="row-fluid" id="ui-accordion-3" name="r3">
+                <div class="textShow">
+                  <div class="tit" id="pr3">
+                    <div class="text">
+                      <h2 id="contentTitle3" contenteditable="false" class="contenteditable modification">男女比例</h2>
+                    </div>
+                  </div>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+                        <div class="mwbcom" id="echart1" style="height: 346px;width: 500px;float: left;">
 
+                        </div>
+                        <div class="mwbcom" id="echart2" style="height: 346px;width: 500px;float: right">
 
-                <ul class="column ui-sortable">
-                  <li>
-                    <div class="yb2 rel" id="eventProfile">
-                      <h2>
-                        <div><span class="contenteditable" contenteditable="false">11月07日</span></div>
-                      </h2>
-                      <div class="more"><span class="packUp2"><a
-                        href="javascript:void(0)"><label>展开事件进展&nbsp;<i></i></label></a></span></div>
-                      <ul id="trend" class="ui-sortable" style="padding-bottom: 0;">
-                        <li>
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false" style="padding-bottom: 10px;">
-                              <a style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://you.ctrip.com/travels/changping143881/3584850.html">[11月7日 0点]爱在深秋 -
-                              昌平游记攻略【携程攻略】[携程游记] 影响力：1</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--男女比例 end-->
+              <!--地域分布 start-->
+              <div class="row-fluid" id="ui-accordion-4" name="r4">
+                <div class="textShow">
+                  <div class="tit" id="pr4">
+                    <div class="text">
+                      <h2 id="contentTitle4" contenteditable="false" class="contenteditable modification">地域分布</h2>
+                    </div>
+                  </div>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+                        <div class="mwbcom" id="echart3" style="height: 346px;width: 500px;float: left">
+                        </div>
+                        <div class="info-section" style="width: 342px;float: right">
+                          <div class="scrolling_outer" style="position: relative;">
+                            <div id="scrollTabwrapper" class="scrolling_inner"
+                                 style="border: 1px solid rgb(204, 204, 204); overflow: hidden auto; padding-right: 0px; height: 400px; width: 100%;">
+                              <table border="0" cellspacing="" cellpadding=""
+                                     class="map_table map_table2 _scrolling _thead"
+                                     style="width: auto; display: block; position: absolute; border-top: none; border-right: none; border-bottom: 1px solid rgb(204, 204, 204); border-left: none; border-image: initial; top: 1px;background: #d0d5d4;">
+                                <thead>
+                                <tr>
+                                  <th width="33%" style="width: 104px;">地域</th>
+                                  <th width="" style="width: 211px;">人数</th>
+                                </tr>
+                                </thead>
+
+                              </table>
+                              <table id="scrollTab" border="0" cellspacing="" cellpadding=""
+                                     class="map_table map_table2 _scrolling" style="width: 100%;">
+                                <thead>
+                                <tr>
+                                  <th width="33%">地域</th>
+                                  <th width="">人数</th>
+                                </tr>
+                                </thead>
+                                <tbody id="c5_tb" class="ui-sortable">
+                                <tr v-for="item in location_data">
+                                  <td>&nbsp;{{item.name}}</td>
+                                  <td>&nbsp;{{item.value}}</td>
+                                </tr>
+                                </tbody>
+                              </table>
                             </div>
                           </div>
-                        </li>
-                        <li>
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1738769831/Fu7lwA5FK">[11月8日 11点]来自家长的怒控！
-                              上海携程幼儿园（携程亲子中心），不知道里面还有多少被虐待的孩子。 http://t.cn/RlWR6Fz[新浪微博] 影响力：102452</a></div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1738769831/Fu8wom7AD">[11月8日 14点]坚持听完家长的控诉，不知道那些“人”怎么下得了手！
-                              上海携程幼儿园（携程亲子中心），初心是好，但是这甩手掌柜的做事态度[拜拜] http://t.cn/RllYY85[新浪微博] 影响力：129526</a></div>
-                          </div>
-                        </li>
-                        <li>
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1746575865/Fu8XXsMF0">[11月8日
-                              16点]【携程回应亲子园事件：为第三方管理，已开除涉事人员】携程亲子幼儿园虐童事件发生后，家长向幼儿园讨要说法时称：老师把消毒水喷到一岁半的孩子的眼睛和嘴里、半个小时给宝宝喂了半碗芥末，导致宝宝一个小时拉6次；
-                              看着这位母亲哭诉，心疼！[伤心]http://t.cn/RllnFNA[新浪微博] 影响力：30496</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1644114654/Fu9do32Sm">[11月8日
-                              16点]#携程亲子园虐童#【家长控诉：孩子一小时拉6次！涉事教师下跪认错】针对虐童事件，携程11月8日召开道歉会。涉事教师向家长下跪认错，家长痛哭控诉，有人情绪激动，上台殴打涉事教师，强灌其吃芥末。目前，涉事教师已被警方控制。@新京报我们视频
-                              http://t.cn/RljtP4T[新浪微博] 影响力：34378</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1644948230/Fu9jRgaq9">[11月8日 17点]【携程副总回应虐童：最先曝光此事的员工已被开除是不可能的】
-                              “携程幼托所虐童”一事在持续发酵。对于网上“事发后携程曾封锁消息，最先曝光的员工已被开除”的说法，携程集团党委书记、副总裁施琦表示：“这是不可能的，携程是一个规范的单位，员工离职也有一个过程，不是说开除就开除的。”施琦还[新浪微博]
-                              影响力：13815</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1323527941/Fu9vXcyYs">[11月8日
-                              17点]【携程亲子园家长控诉：孩子一小时拉6次！涉事教师下跪】8日携程召开道歉会。涉事教师向家长下跪认错，家长痛哭控诉，有人情绪激动，上台殴打涉事教师，强灌其吃芥末。家长控诉，半小时给宝宝喂了半管芥末，孩子一小时拉6次。喷消毒水，喷在眼睛上、嘴上。并质问，你们受得了吗？涉事教师已被警方控制[新浪微博]
-                              影响力：18532</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/2803301701/FuabJg2a4">[11月8日 19点]【携程亲子园被曝老师打孩子喂芥末
-                              涉事人员已被控制】近日，携程亲子园被爆出虐童事件。视频显示，老师将孩子推撞到桌角，给孩子强喂不明食物，有家长指出是芥末。家长情绪激动，打了涉事老师，反灌其芥末，老师下跪道歉。携程回应称亲子园为委托第三方管理。目前涉事人员已被解雇，警方介入。[新浪微博]
-                              影响力：27004</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1644114654/Fub60nd3v">[11月8日 21点]【携程将复查三月内监控
-                              教委称“妇联是第一责任人”】携程亲子园教师虐童事件引发热议。@携程旅行网
-                              回应称坚决和职工站在一起追责到底，已报警并开除涉事人员。长宁区教育局相关负责人回应：“它不是正规幼儿园，是社区幼儿托管点，妇联是第一责任人”。@时间视频
-                              http://t.cn/Rljgmku[新浪微博] 影响力：25708</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2">
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/2636879811/FucdBqhov">[11月9日
-                              0点]【上海市妇联回应“携程亲子园事件”：强烈谴责，密切关注进展！】上海市妇女联合会对“携程亲子园事件”深切关注。市妇联一直致力于切实维护妇女儿童合法权益，对于这起伤害儿童的恶劣事件，市妇联表示强烈谴责，并密切关注此事后续进展。经市妇联了解，目前携程亲子园公开的处理情况如下：[新浪微博]
-                              影响力：12749</a></div>
-                          </div>
-                        </li>
-                        <li style="display: none;">
-                          <div class="float_l"><span class="line"></span><span class="round"></span><span
-                            class="line"></span></div>
-                          <div class="sz"></div>
-                          <div class="text text2"><i class="icon-arrows yb-move" style="display: none;"></i><i
-                            class="icon-trash-o yb-delete" onclick="del(this);" style="display: none;"></i><i
-                            class="icon-control_point yb-add" onclick="add();" style="display: none;"></i>
-                            <div class="contenteditable" contenteditable="false"><a
-                              style="color: #000;text-decoration:none;" target="_blank"
-                              href="http://weibo.com/1600463082/FufHp6soF">[11月9日 9点]携程亲子园虐童事件真相——就在张葆葆身后。。。[新浪微博]
-                              影响力：14042</a></div>
-                          </div>
-                        </li>
-                      </ul>
-                      <ul style="padding-top: 2px;">
-                        <li>
-                          <div class="float_l"><span class="roundEnd">续</span></div>
-                        </li>
-                      </ul>
-                    </div>
-                  </li>
-                </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              <!--地域分布 end-->
+              <!--词云统计 start-->
+              <div class="row-fluid" id="ui-accordion-5" name="r5">
+                <div class="textShow">
+                  <div class="tit" id="pr5">
+                    <div class="text">
+                      <h2 id="contentTitle5" contenteditable="false" class="contenteditable modification">词云统计</h2>
+                    </div>
+                  </div>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+                        <div class="mwbcom" id="echart4" style="height: 436px;width: 800px;">
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+                        <div class="mwbcom" id="echart5" style="height: 346px;width: 500px;float: left;">
+
+                        </div>
+                        <div class="mwbcom" id="echart6" style="height: 346px;width: 500px;float: right">
+
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--词云统计 end-->
+              <!--负面走势 start -->
+              <div class="row-fluid" id="ui-accordion-6" name="r6">
+                <div class="textShow">
+                  <div class="tit" id="pr6">
+                    <div class="text">
+                      <h2 id="contentTitle6" contenteditable="false" class="contenteditable modification">负面走势</h2>
+                    </div>
+                  </div>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+                        <div class="mwbcom" id="echart7" style="height: 436px;width: 800px;margin-left: 125px;">
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="column ui-sortable">
+                    <li>
+                      <div class="text tool tools">
+
+                          <el-table :data="event_data">
+                          <el-table-column
+                            prop="title"
+                            label="标题"
+                            align="center"
+                            width="430"
+                          >
+                          </el-table-column>
+                            <el-table-column
+                            prop="comment_count"
+                            label="评论数量"
+                            align="center"
+                            width="200"
+                          >
+                          </el-table-column>
+                            <el-table-column
+                            prop="voteup_count"
+                            label="点赞数量"
+                            align="center"
+                            width="200"
+                          >
+                          </el-table-column>
+
+                            <el-table-column
+                            prop="created_time"
+                            label="时间"
+                            align="center"
+                            width="200"
+                          ><template slot-scope="scope">
+                        <!--{{scope.row.keyword}}-->
+                        {{scope.row.created_time|filterDate}}
+                      </template>
+                          </el-table-column>
+                        </el-table>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!--负面走势 end-->
             </div>
-            <!--事件走势 end-->
           </div>
-            </div>
         </div>
       </div>
     </el-main>
   </el-container>
 </template>
-
+<!--<remote-script src="../../js/china.js"></remote-script>-->
 <script>
+  import * as echarts from 'echarts'
+  import '../../../node_modules/echarts/map/js/china.js'
+  import '../../../node_modules/echarts-wordcloud/dist/echarts-wordcloud.min.js'
+
   export default {
     name: "dataReport",
-    data(){
-      return{}
+    data() {
+      return {
+        zhihu: {
+          "zhihu_icu": "996icu",
+          "zhihu_paris": "巴黎圣母院",
+          "zhihu_car": "奔驰"
+        },
+        report_name: "网络传播分析报告",
+        event_data: [],
+        gender_data: {},
+        location_data: [],
+        vote_data: [],
+        word_data: {},
+        comment_data: [],
+        option1: {
+          title: {
+            text: '男女比例饼图',
+            // subtext: '纯属虚构',
+            x: 'center'
+          },
+          tooltip: {
+            trigger: 'item',
+            formatter: "{a} <br/>{b}: {c} ({d}%)"
+          },
+          legend: {
+            top: "30px",
+            orient: 'horizontal',
+            left: 'cenetr',
+            data: ['女性', '男性', '其他']
+          },
+          series: [
+            {
+              name: '男女比例',
+              type: 'pie',
+              radius: ['40%', '70%'],
+              // avoidLabelOverlap: false,
+
+              data: [
+                {value: 21335, name: '直接访问'},
+                {value: 3150, name: '邮件营销'},
+                {value: 210, name: '联盟广告'},
+
+              ],
+              itemStyle: {
+                emphasis: {
+                  shadowBlur: 10,
+                  shadowOffsetX: 0,
+                  shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+              }
+            }
+          ]
+        },
+        option2: {
+          title: {
+            text: "男女比例柱状图",
+            x: "center"
+          },
+          color: ['#3398DB'],
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+              type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: [
+            {
+              type: 'category',
+              data: ['女性', '男性', '其他'],
+              axisTick: {
+                alignWithLabel: true
+              }
+            }
+          ],
+          yAxis: [
+            {
+              type: 'value'
+            }
+          ],
+          series: [
+            {
+              name: '男女比例',
+              type: 'bar',
+              barWidth: '60%',
+              data: [10, 52, 200]
+            }
+          ]
+        },
+        // 中国地图
+        option3: {
+          title: {
+            text: '人员地域分布',
+            // subtext: '纯属虚构',
+            left: 'center'
+          },
+          tooltip: {
+            trigger: 'item'
+          },
+          legend: {
+            orient: 'vertical',
+            left: 'left',
+            data: ['数量']
+          },
+          visualMap: {
+            min: 0,
+            max: 2500,
+            left: 'left',
+            top: 'bottom',
+            text: ['高', '低'],           // 文本，默认为数值文本
+            calculable: true
+          },
+          toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+              mark: {show: true},
+              dataView: {show: true, readOnly: false},
+              restore: {show: true},
+              saveAsImage: {show: true}
+            }
+          },
+          series: [
+            {
+              name: '数量',
+              type: 'map',
+              mapType: 'china',
+              roam: false,
+              label: {
+                normal: {
+                  show: true
+                },
+                emphasis: {
+                  show: true
+                }
+              },
+              data: [
+                {name: '北京', value: Math.round(Math.random() * 1000)},
+                {name: '天津', value: Math.round(Math.random() * 1000)},
+                {name: '上海', value: Math.round(Math.random() * 1000)},
+                {name: '重庆', value: Math.round(Math.random() * 1000)},
+                {name: '河北', value: Math.round(Math.random() * 1000)},
+                {name: '河南', value: Math.round(Math.random() * 1000)},
+                {name: '云南', value: Math.round(Math.random() * 1000)},
+                {name: '辽宁', value: Math.round(Math.random() * 1000)},
+                {name: '黑龙江', value: Math.round(Math.random() * 1000)},
+                {name: '湖南', value: Math.round(Math.random() * 1000)},
+                {name: '安徽', value: Math.round(Math.random() * 1000)},
+                {name: '山东', value: Math.round(Math.random() * 1000)},
+                {name: '新疆', value: Math.round(Math.random() * 1000)},
+                {name: '江苏', value: Math.round(Math.random() * 1000)},
+                {name: '浙江', value: Math.round(Math.random() * 1000)},
+                {name: '江西', value: Math.round(Math.random() * 1000)},
+                {name: '湖北', value: Math.round(Math.random() * 1000)},
+                {name: '广西', value: Math.round(Math.random() * 1000)},
+                {name: '甘肃', value: Math.round(Math.random() * 1000)},
+                {name: '山西', value: Math.round(Math.random() * 1000)},
+                {name: '内蒙古', value: Math.round(Math.random() * 1000)},
+                {name: '陕西', value: Math.round(Math.random() * 1000)},
+                {name: '吉林', value: Math.round(Math.random() * 1000)},
+                {name: '福建', value: Math.round(Math.random() * 1000)},
+                {name: '贵州', value: Math.round(Math.random() * 1000)},
+                {name: '广东', value: Math.round(Math.random() * 1000)},
+                {name: '青海', value: Math.round(Math.random() * 1000)},
+                {name: '西藏', value: Math.round(Math.random() * 1000)},
+                {name: '四川', value: Math.round(Math.random() * 1000)},
+                {name: '宁夏', value: Math.round(Math.random() * 1000)},
+                {name: '海南', value: Math.round(Math.random() * 1000)},
+                {name: '台湾', value: Math.round(Math.random() * 1000)},
+                {name: '香港', value: Math.round(Math.random() * 1000)},
+                {name: '澳门', value: Math.round(Math.random() * 1000)}
+              ]
+            }
+
+
+          ]
+        },
+        //词云
+        option4: {
+          title: {
+            text: '词云展示',
+            x: 'center',
+            marginTop: 100
+          },
+          toolbox: {
+            show: true,
+            orient: 'vertical',
+            left: 'right',
+            top: 'center',
+            feature: {
+              mark: {show: true},
+              dataView: {show: true, readOnly: false},
+              magicType: {
+                show: true,
+                type: ['pie', 'funnel']
+              },
+              restore: {show: true},
+              saveAsImage: {show: true}
+            }
+          },
+          tooltip: {},
+          series: [{
+            type: 'wordCloud',  //类型为字符云
+            shape: 'smooth',  //平滑
+            gridSize: 2, //网格尺寸
+            // size: ['80%', '80%'],
+            sizeRange: [20, 100],
+            rotationRange: [30, 80], //旋转范围
+            //maskImage: maskImage,  //自定义图案
+            textStyle: {
+              normal: {
+                fontFamily: 'sans-serif',
+                color: function () {
+                  return 'rgb('
+                    + [Math.round(Math.random() * 160),
+                      Math.round(Math.random() * 160),
+                      Math.round(Math.random() * 160)]
+                      .join(',') + ')';
+                }
+              },
+              emphasis: {
+                shadowBlur: 5,  //阴影距离
+                shadowColor: '#333'  //阴影颜色
+              }
+            },
+            data: [],
+          }]
+        },
+        // 词云柱状图
+        option5: {
+          title: {
+            text: '词频统计',
+          },
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+              type: 'shadow'
+            }
+          },
+          legend: {
+            data: ['出现次数'],
+            show: false
+          },
+          grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+          },
+          xAxis: {
+            type: 'value',
+            boundaryGap: [0, 0.01]
+          },
+          yAxis: {
+            type: 'category',
+            data: ['巴西', '印尼', '美国', '印度', '中国', '世界人口(万)']
+          },
+          series: [
+            {
+              name: '出现次数',
+              type: 'bar',
+              data: [18203, 23489, 29034, 104970, 131744, 630230]
+            }
+          ]
+        },
+        //词云的pie图
+        option6: {
+          title: {
+            text: '词频的极坐标图'
+          },
+          tooltip: {
+            trigger: 'axis',
+            axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+              type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+            }
+          },
+          angleAxis: {
+            type: 'category',
+            data: ['周一', '周二', '周三', '周四', '周五', '周六', '周日'],
+            z: 10
+          },
+          radiusAxis: {},
+          polar: {},
+          series: [{
+            type: 'bar',
+            data: [1, 2, 3, 4, 3, 5, 1],
+            coordinateSystem: 'polar',
+            name: '出现次数',
+            stack: 'a'
+          }],
+          legend: {
+            show: false,
+            data: ['出现次数']
+          }
+        },
+        // 负面走势
+        option7: {
+          title: {
+            text: '负面走势',
+            // subtext: '纯属虚构',
+            x: 'center'
+          },
+          tooltip: {
+            trigger: 'item',
+            formatter: "{a} {b} : {c} ({d}%)"
+          },
+           toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {
+                show: true,
+                type: ['pie', 'funnel']
+            },
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
     },
-     mounted(){},
-    created(){},
-    methods:{},
+          // legend: {
+          //   type: 'scroll',
+          //   // orient: 'horizent',
+          //   right: 10,
+          //   top: 20,
+          //   bottom: 20,
+          //    // top: "30px",
+          //   orient: 'horizontal',
+          //   left: 'center',
+          //   data: [1,2,3,4,5],
+          //   show:true
+          //   // selected: data.selected
+          // },
+          series: [
+            {
+              name: '走势热度',
+              type: 'pie',
+              radius: '55%',
+              center: ['40%', '50%'],
+              data:[],
+              itemStyle: {
+                emphasis: {
+                  shadowBlur: 10,
+                  shadowOffsetX: 0,
+                  shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+              }
+            }
+          ]
+        },
+        // 当前选择的tab栏
+        liselected:"1"
+      }
+    },
+    mounted() {
+
+    },
+    created() {
+      this.GetReport();
+    },
+    methods: {
+      // 切换class
+      onePageNav(num){
+         this.liselected = num;
+      },
+      // 设置echart面板数据
+      drawOption(type) {
+        let mychart = this.$echarts.init(document.getElementById('echart' + type));
+        mychart.setOption(this["option" + type]);
+      },
+      //获取基本信息
+      GetReport() {
+        let data = {
+          "data_name": this.$route.params.data_name,
+          "keywords": this.zhihu[this.$route.params.data_name],
+          "csrfmiddlewaretoken": this.getCookie('csrftoken')
+        };
+        this.$http({
+          url: this.$store.state.location + "/api_report/",
+          method: "POST",
+          data: this.$Qs.stringify(data),
+        }).then(response => {
+          let result = response.data;
+          this.report_name = result["data"].report_name;
+          this.comment_data = result["data"].comment_data;
+          this.vote_data = result["data"].vote_data;
+          this.gender_data = result["data"].gender_data;
+          this.option1.series[0].data = [
+            {value: this.gender_data.female, name: '女性比例'},
+            {value: this.gender_data.male, name: '男性比例'},
+            {value: this.gender_data.unknowmale, name: '其他比例'},
+          ];
+          this.drawOption(1);
+          this.option2.series[0].data = [this.gender_data.female, this.gender_data.male, this.gender_data.unknowmale]
+          this.drawOption(2);
+          // 地图
+          this.location_data = result["data"].location_data;
+          this.option3.series[0].data = this.location_data;
+          // console.log(this.option3.series[0].data)
+          this.drawOption(3);
+          // 词云
+          this.word_data = result["data"].word_data;
+          this.option4.series[0].data = this.word_data;
+          //console.log(this.option4.series[0].data);
+          // let maskImage = new Image();
+          // maskImage.src = '../../assets/e.jpg';
+          // this.option4.series[0].maskImage = maskImage;
+          this.drawOption(4);
+          let categories = [];
+          let x_data = [];
+          for (var item in this.word_data) {
+            if (item < 20) {
+              categories.push(this.word_data[item].name);
+              x_data.push(this.word_data[item].value);
+            }
+            else {
+              break;
+            }
+          }
+          this.option5.yAxis.data = categories;
+          this.option5.series[0].data = x_data;
+          this.drawOption(5);
+          this.option6.angleAxis.data = categories;
+          this.option6.series[0].data = x_data;
+          this.drawOption(6);
+          this.event_data = result['data'].event_data;
+          let legend_data = [];
+          let series_data = [];
+          for (var i in this.event_data) {
+            legend_data.push(this.event_data[i].title);
+            series_data.push({"name":this.event_data[i].title,"value":parseInt(this.event_data[i].comment_count) + parseInt(this.event_data[i].voteup_count)})
+          }
+          // this.option7.legend.data = legend_data;
+          // console.log(this.option7.legend.data);
+          this.option7.series[0].data = series_data;
+          this.drawOption(7);
+        }).catch(error => {
+          console.log(error);
+        })
+      }
+    },
   }
 </script>
 
 <style scoped>
+  .y2.y2_1 ul:first-child {
+    border-bottom: solid 1px #6fc1bf;
+  }
+
+  .yxl_top .y2 {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .y2 ul > li {
+    margin: 0;
+    width: 19%;
+    padding-top: 5px;
+    height: 240px;
+    background-color: #fff;
+    float: left;
+    border: solid 3px #cee7d2;
+    margin-bottom: 5px;
+    margin-left: 4px;
+  }
+
   .reportCon {
     background-color: #FAF9F9;
   }
@@ -282,17 +793,18 @@
     color: #333;
     margin-bottom: 10px;
     text-align: left;
-}
-  .reportCon .reportBox .textShow .text, .textCon .text2, .reportCon .reportBox .textShow .column .text,.reportCon .row-fluid .textShow .text {
+  }
+
+  .reportCon .reportBox .textShow .text, .textCon .text2, .reportCon .reportBox .textShow .column .text, .reportCon .row-fluid .textShow .text {
     font-size: 14px;
     line-height: 25px;
     color: #666;
     margin-bottom: 10px !important;
     display: inline-block;
     clear: both;
-}
+  }
 
-  .row-fluid .textShow ul{
+  .row-fluid .textShow ul {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
@@ -308,14 +820,17 @@
     color: #fff;
     text-align: center;
     margin-left: 10px;
-}
-.yb2 .more a {
+  }
+
+  .yb2 .more a {
     border: solid 1px #e7e7e7;
-}
-.packUp2 a {
+  }
+
+  .packUp2 a {
     margin-top: -1px;
-}
-.packUp a, .packUp2 a {
+  }
+
+  .packUp a, .packUp2 a {
     display: block;
     width: 120px;
     height: 22px;
@@ -329,11 +844,13 @@
     border-top: solid 1px #fff;
     font-size: 12px;
     margin-top: -1px;
-}
-.float_l {
+  }
+
+  .float_l {
     float: left;
-}
-.yb2 .line {
+  }
+
+  .yb2 .line {
     display: block;
     width: 2px;
     height: 100%;
@@ -342,8 +859,9 @@
     z-index: 1;
     top: 0px;
     left: 50px;
-}
-.yb2 .round {
+  }
+
+  .yb2 .round {
     display: block;
     width: 15px;
     height: 15px;
@@ -358,21 +876,24 @@
     z-index: 2;
     top: 42px;
     left: 43px;
-}
-.contenteditable {
-    padding: 0 10px;
-}
+  }
 
-.packUp, .packUp2 {
+  .contenteditable {
+    padding: 0 10px;
+  }
+
+  .packUp, .packUp2 {
     border-top: solid 1px #e7e7e7;
     margin-top: 0px;
     margin-bottom: 8px;
-}
-.yb2 .more {
+  }
+
+  .yb2 .more {
     position: absolute;
     bottom: 30px;
     right: 55px;
-}
+  }
+
   /* CSS Document */
   input, textarea {
     font-family: "微软雅黑";
@@ -387,10 +908,12 @@
     width: 1200px;
     margin: auto;
   }
-.float_l {
+
+  .float_l {
     float: left;
-}
-.yb2 .roundEnd {
+  }
+
+  .yb2 .roundEnd {
     display: block;
     width: 32px;
     height: 32px;
@@ -406,8 +929,9 @@
     z-index: 2;
     bottom: -22px;
     left: 34px;
-}
-.yb2 .text:after {
+  }
+
+  .yb2 .text:after {
     content: "";
     position: absolute;
     top: 28px;
@@ -415,7 +939,8 @@
     border-bottom: 10px solid transparent;
     border-top: 10px solid transparent;
     border-right: 10px solid #EDEDED;
-}
+  }
+
   /*报告左侧浮动导航*/
   #nav2 {
     list-style: none;
@@ -663,7 +1188,8 @@
   .reportCon .reportBox .textShow .column .yb2 ul li {
     width: 100%;
   }
-.yb2 ul li {
+
+  .yb2 ul li {
     padding-left: 5px;
     line-height: 50px;
     color: #2b2b2b;
@@ -672,7 +1198,8 @@
     clear: both;
     position: relative;
     padding-bottom: 10px;
-}
+  }
+
   .reportCon .reportBox .textShow .column .yb2 .text {
     width: 85%;
     line-height: 20px;
