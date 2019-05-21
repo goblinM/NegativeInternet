@@ -2,9 +2,11 @@
 import json
 
 import scrapy
+import sys
+sys.path.append('..')
 from scrapy import Request
-
-from InternetSpider.InternetSpider.items import UserItem
+from InternetSpider.items import UserItem
+# from InternetSpider.InternetSpider.items import UserItem
 from app.web.db_utils.mongodb import MongoDBUtils
 
 

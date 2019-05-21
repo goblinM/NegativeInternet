@@ -28,21 +28,21 @@
                  </router-link>
             </li>
             <li role="presentation" ><!--:class="{active:shows==4}"-->
-                <router-link :to="{name:'#'}">
+                <router-link target="_self" :to="{name:'userManage'}" >
                     <!--<span class="icon-info-report"></span>-->
                   <img src="../../assets/3.png"/>
                     <span class="">用户管理</span>
                     <span class="ani_border"></span>
                 </router-link>
             </li>
-            <li role="presentation" ><!--:class="{active:shows==5}"-->
-                <router-link :to="{name:'#'}" >
-                    <!--<span class="icon-info-screen"></span>-->
-                  <img src="../../assets/4.png"/>
-                    <span class="">爬虫管理</span>
-                    <span class="ani_border"></span>
-                </router-link>
-            </li>
+            <!--<li role="presentation" >&lt;!&ndash;:class="{active:shows==5}"&ndash;&gt;-->
+                <!--<router-link target="_self" :to="{name:'spiderManage'}" >-->
+                    <!--&lt;!&ndash;<span class="icon-info-screen"></span>&ndash;&gt;-->
+                  <!--<img src="../../assets/4.png"/>-->
+                    <!--<span class="">爬虫管理</span>-->
+                    <!--<span class="ani_border"></span>-->
+                <!--</router-link>-->
+            <!--</li>-->
         </ul>
         <div class="bottom-wrap">
           <transition name="" mode="out-in">

@@ -5,6 +5,8 @@ import re
 import scrapy
 from scrapy import Request
 
+import sys
+sys.path.append('..')
 from InternetSpider.items import ZhiHuItem
 
 class CarSpider(scrapy.Spider):

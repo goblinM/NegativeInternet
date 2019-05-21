@@ -64,4 +64,15 @@ Vue.filter('filterDate', function (value) {
   }
   let date = new Date(parseInt(value)*1000);
   return date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate();
-})
+});
+/*
+* 用户类型过滤
+**/
+Vue.filter('filterType',function (value) {
+  if(value === 1){
+    return "超级管理员"
+  }
+  else{
+    return "普通用户"
+  }
+});

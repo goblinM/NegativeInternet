@@ -24,9 +24,9 @@
                 <li class="" @click="selectDay('10')" :class="{'active':timeselected=== '10'}">
                   <span class="">10天</span>
                 </li>
-                <li class="" >
-                  <span class="">自定义</span>
-                </li>
+                <!--<li class="" >-->
+                  <!--<span class="">自定义</span>-->
+                <!--</li>-->
               </ul>
             </div>
             <div class="inline-block font-size-0 right-setting">

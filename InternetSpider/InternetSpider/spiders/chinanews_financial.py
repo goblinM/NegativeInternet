@@ -7,6 +7,8 @@ import time
 
 from scrapy import Spider, Request, FormRequest
 
+import sys
+sys.path.append('..')
 from InternetSpider.items import InternetItem
 
 

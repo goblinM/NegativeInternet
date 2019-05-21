@@ -10,6 +10,8 @@ from matplotlib.font_manager import FontProperties
 from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 from app.web.db_utils.mongodb import MongoDBUtils
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 class Word:

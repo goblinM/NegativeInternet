@@ -3,7 +3,8 @@ import json
 import re
 
 from scrapy import Spider, Request
-
+import sys
+sys.path.append('..')
 from InternetSpider.items import ZhiHuItem
 
 

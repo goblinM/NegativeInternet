@@ -3,8 +3,10 @@ import json
 
 import scrapy
 from scrapy import Request
-
-from InternetSpider.InternetSpider.items import UserItem
+import sys
+sys.path.append('..')
+from InternetSpider.items import UserItem
+# from InternetSpider.InternetSpider.items import UserItem
 from app.web.db_utils.mongodb import MongoDBUtils
 
 

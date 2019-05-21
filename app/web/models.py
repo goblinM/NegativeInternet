@@ -12,7 +12,7 @@ class User(AbstractUser):
     # user = models.CharField(max_length=25,null=True)
     # password = models.CharField(max_length=255,null=True)
     user_type = models.CharField(max_length=25,choices=TYPE_CHOINCES,default=0,verbose_name=u'用户的类型')#默认普通用户
-    user_phone = models.IntegerField(null=True,verbose_name=u"用户的手机号码")
+    user_phone = models.CharField(null=True,verbose_name=u"用户的手机号码",max_length=25)
 
     class Meta(AbstractUser.Meta):
         verbose_name = "用户表"
