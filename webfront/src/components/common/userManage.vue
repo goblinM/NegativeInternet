@@ -83,7 +83,7 @@
   </div>
       </el-dialog>
       <!---------------------新增修改用户弹框--------------------->
-      <el-dialog title="添加用户" :visible.sync="dialogUpdateFormVisible" >
+      <el-dialog title="修改用户" :visible.sync="dialogUpdateFormVisible" >
         <el-form :model="updateform" style="width: 500px">
           <el-form-item label="账户" :label-width="formLabelWidth">
             <el-input v-model="updateform.username" autocomplete="off" disabled></el-input>

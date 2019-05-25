@@ -62,10 +62,10 @@ import {Loading} from 'element-ui'
             },
           }).then((response) => {
             let result = response.data;
-            //console.log(result);
-            if (result === "Failed") {
+            console.log(result);
+            if (result === "failed") {
               this.$message.error({
-                message: "登录失败，请检查"
+                message: "登录失败，请检查账户或密码"
               })
             }
             else {

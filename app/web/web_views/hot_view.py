@@ -37,12 +37,12 @@ class HotViewSet(viewsets.ModelViewSet):
         user_type = data.get("user_type")
         if user_type == "1":#admin权限,开启爬虫
             # run_hot()
-            scrapyd = ScrapydAPI('http://localhost:6800') # 这里是去调用部署分布式爬虫
+            # scrapyd = ScrapydAPI('http://localhost:6800') # 这里是去调用部署分布式爬虫
             # print(scrapyd.list_projects())#获取爬虫项目名
             # print(scrapyd.list_spiders('default'))#获取爬虫项目中的爬虫工程名
             # print(scrapyd.list_jobs('default')) #获取爬虫项目中运行的爬虫工程信息
             # print(scrapyd.list_versions('default'))# 获取爬虫项目中的版本
-            scrapyd.schedule('default','hotdaily') # 这里是启动爬虫
+            # scrapyd.schedule('default','hotdaily') # 这里是启动爬虫
             return Response("ok")
         else:
             return Response("failed")

@@ -4,7 +4,10 @@ created by goblinM 2019-4-22
 百度实时热点搜索
 """
 import json
-
+import sys
+# from importlib import reload
+# reload(sys)
+# sys.path.append("../")
 from scrapy import Spider,Request
 
 # import sys

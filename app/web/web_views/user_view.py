@@ -42,7 +42,7 @@ class UserViewSet(viewsets.ModelViewSet):
             user_serializer = UserSerializer(userinfo,many=True)
             return Response(user_serializer.data[0])
         else:
-            return Response("Failed")
+            return Response("failed")
 
     @action(detail=False,methods=["POST"])
     def get_user_infor(self,request):
