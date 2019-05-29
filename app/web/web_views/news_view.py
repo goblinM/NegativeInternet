@@ -12,9 +12,12 @@ from rest_framework.response import Response
 
 from app.web.db_utils import mongodb
 from app.web.db_utils.mongodb import MongoDBUtils
+from app.web.webSerializers import HotSerializer
 
 
 class ZiXunViewSet(viewsets.ModelViewSet):
+
+    serializer_class = HotSerializer
 
     @action(detail=False,methods=["post"])
     def get_zixun_news(self, request):
