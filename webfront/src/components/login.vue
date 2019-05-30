@@ -71,7 +71,7 @@ import {Loading} from 'element-ui'
             else {
               sessionStorage.setItem("name", result["username"]);
               sessionStorage.setItem("user_id", result["id"]);
-              sessionStorage.setItem("user_type",result["user_type"])
+              sessionStorage.setItem("user_type",result["user_type"]);
               this.$router.push({name:"HomePage"});//跳转到index页面
             }
             //取消拦截器
