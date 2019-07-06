@@ -143,7 +143,7 @@ DOWNLOAD_FAIL_ON_DATALOSS = False
 DOWNLOADER_MIDDLEWARES = {
    'InternetSpider.middlewares.RandomUserAgent': 1,
     # 'InternetSpider.middlewares.ProxyMiddleware':110,
-    # 'InternetSpider.middlewares.ABProxyMiddleware':110
+    'InternetSpider.middlewares.ABProxyMiddleware':110
 }
 
 # Enable or disable extensions

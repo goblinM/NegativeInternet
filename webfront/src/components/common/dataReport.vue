@@ -9,8 +9,8 @@
           <li id="r4" @click="onePageNav('4')" :class="{'current':liselected=== '4'}"><a href="#pr4">地域分布</a></li>
           <li id="r5" @click="onePageNav('5')" :class="{'current':liselected=== '5'}"><a href="#pr5">词云统计</a></li>
           <li id="r6" @click="onePageNav('6')" :class="{'current':liselected=== '6'}"><a href="#pr6">负面走势</a></li>
-          <li id="r7" @click="onePageNav('7')" :class="{'current':liselected=== '7'}"><a href="#pr7">高频词汇</a></li>
-          <li id="r8" @click="onePageNav('8')" :class="{'current':liselected=== '8'}"><a href="#pr8">情感分析</a></li>
+          <!--<li id="r7" @click="onePageNav('7')" :class="{'current':liselected=== '7'}"><a href="#pr7">高频词汇</a></li>-->
+          <!--<li id="r8" @click="onePageNav('8')" :class="{'current':liselected=== '8'}"><a href="#pr8">情感分析</a></li>-->
 
         </ul>
         <!--分析完毕 start-->

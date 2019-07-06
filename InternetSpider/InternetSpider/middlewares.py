@@ -52,8 +52,8 @@ class ABProxyMiddleware(object):
         # proxyPort = "9030"
         proxyServer = "http://http-dyn.abuyun.com:9020"
         # 代理隧道验证信息
-        proxyUser = "H05Z5U9SXCRE3O3D"
-        proxyPass = "77AD782E0401FFA3"
+        proxyUser = "H12BWJ902Q4M156D"
+        proxyPass = "FA5D27B192ED7CB8"
         proxyAuth = "Basic " + base64.urlsafe_b64encode(bytes((proxyUser + ":" + proxyPass), "ascii")).decode("utf8")
         print("**************ProxyMiddleware************" )
         request.meta["proxy"] = proxyServer
